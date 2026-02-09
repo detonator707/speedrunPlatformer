@@ -1,3 +1,17 @@
 [gd_scene format=3 uid="uid://o326png8lyqm"]
 
+[ext_resource type="Script" uid="uid://dd3wv5rn34glm" path="res://speedrunPlatformer/character.gd" id="1_4ky2k"]
+
 [node name="Game" type="Node" unique_id=1747537082]
+
+[node name="Character" type="CharacterBody2D" parent="." unique_id=1683185460]
+script = ExtResource("1_4ky2k")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Character" unique_id=1828263339]
+
+[node name="Camera2D" type="Camera2D" parent="Character" unique_id=1060664000]
+
+[node name="Map" type="Node" parent="." unique_id=1717265281]
+
+[node name="TileMap" type="TileMap" parent="Map" unique_id=1747482695]
+format = 2

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://conqa26vjqans"
-path="res://.godot/imported/redSquare.png-463666bd89bb8a9cbf9dbd91e39538e0.ctex"
+path="res://.godot/imported/redSquare.png-265cfc727ba3b35b4c7691ba8172bdcf.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://speedrunPlatformer/sprites/redSquare.png"
-dest_files=["res://.godot/imported/redSquare.png-463666bd89bb8a9cbf9dbd91e39538e0.ctex"]
+source_file="res://sprites/redSquare.png"
+dest_files=["res://.godot/imported/redSquare.png-265cfc727ba3b35b4c7691ba8172bdcf.ctex"]
 
 [params]
 

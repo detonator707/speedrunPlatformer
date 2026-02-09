@@ -1,11 +1,11 @@
 [gd_scene format=3 uid="uid://o326png8lyqm"]
 
-[ext_resource type="Script" uid="uid://dd3wv5rn34glm" path="res://speedrunPlatformer/character.gd" id="1_4ky2k"]
+[ext_resource type="Script" uid="uid://dd3wv5rn34glm" path="res://speedrunPlatformer/scripts/character.gd" id="1_5vujo"]
 
 [node name="Game" type="Node" unique_id=1747537082]
 
 [node name="Character" type="CharacterBody2D" parent="." unique_id=1683185460]
-script = ExtResource("1_4ky2k")
+script = ExtResource("1_5vujo")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Character" unique_id=1828263339]
 

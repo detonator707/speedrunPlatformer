@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b7t68qqoyi416"
-path="res://.godot/imported/brownSquare.png-88b697d7c1d0edb31934558c9a6a2e5f.ctex"
+uid="uid://c2ne24o3la1te"
+path="res://.godot/imported/dash26.png-81e555e25170179861128ae0f47ad7dc.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/brownSquare.png"
-dest_files=["res://.godot/imported/brownSquare.png-88b697d7c1d0edb31934558c9a6a2e5f.ctex"]
+source_file="res://sprites/items/Perks/Perks/dash26.png"
+dest_files=["res://.godot/imported/dash26.png-81e555e25170179861128ae0f47ad7dc.ctex"]
 
 [params]
 

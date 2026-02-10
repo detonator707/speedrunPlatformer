@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://conqa26vjqans"
-path="res://.godot/imported/redSquare.png-265cfc727ba3b35b4c7691ba8172bdcf.ctex"
+uid="uid://pfjofdq8nrlt"
+path="res://.godot/imported/doubleJump4.png-2542c83184f2d280dcc0ec590ea3a750.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/redSquare.png"
-dest_files=["res://.godot/imported/redSquare.png-265cfc727ba3b35b4c7691ba8172bdcf.ctex"]
+source_file="res://sprites/items/Perks/Perks/doubleJump4.png"
+dest_files=["res://.godot/imported/doubleJump4.png-2542c83184f2d280dcc0ec590ea3a750.ctex"]
 
 [params]
 

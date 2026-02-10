@@ -1,8 +1,19 @@
 [gd_scene format=3 uid="uid://o326png8lyqm"]
 
 [ext_resource type="Script" uid="uid://dd3wv5rn34glm" path="res://scripts/character.gd" id="1_5vujo"]
-[ext_resource type="Texture2D" uid="uid://b7t68qqoyi416" path="res://sprites/brownSquare.png" id="2_qxrlw"]
-[ext_resource type="Texture2D" uid="uid://conqa26vjqans" path="res://sprites/redSquare.png" id="2_wrm1d"]
+[ext_resource type="Texture2D" uid="uid://b7t68qqoyi416" path="res://sprites/temp/brownSquare.png" id="2_qxrlw"]
+[ext_resource type="Texture2D" uid="uid://conqa26vjqans" path="res://sprites/temp/redSquare.png" id="2_wrm1d"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_wrm1d"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_wrm1d")
+}],
+"loop": true,
+"name": &"Idle",
+"speed": 5.0
+}]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_3dryh"]
 
@@ -2393,10 +2404,9 @@ collision_mask = 65535
 script = ExtResource("1_5vujo")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Character" unique_id=1828263339]
-
-[node name="Sprite2D" type="Sprite2D" parent="Character" unique_id=1209076678]
-scale = Vector2(0.011874998, 0.015624993)
-texture = ExtResource("2_wrm1d")
+scale = Vector2(0.009791717, 0.016874999)
+sprite_frames = SubResource("SpriteFrames_wrm1d")
+animation = &"Idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Character" unique_id=534402684]
 shape = SubResource("CapsuleShape2D_3dryh")

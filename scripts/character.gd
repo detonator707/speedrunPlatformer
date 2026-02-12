@@ -17,8 +17,8 @@ func _physics_process(delta: float) -> void:
 		velocity.y = JUMP_VELOCITY
 	elif direction == 0 and is_on_floor():
 		animSprite.play("idle")
-	else:
-		animSprite.play("run")
+	#else:
+		#animSprite.play("run")
 
 	# Get the input direction and handle the movement/deceleration.da
 	# As good practice, you should replace UI actions with custom gameplay actions.

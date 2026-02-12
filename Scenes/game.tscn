@@ -42,10 +42,10 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("3_cwurv")
+"texture": ExtResource("4_mucmn")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_mucmn")
+"texture": ExtResource("3_cwurv")
 }, {
 "duration": 1.0,
 "texture": ExtResource("5_8m3t6")
@@ -102,7 +102,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"jump",
-"speed": 10.0
+"speed": 15.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -2531,8 +2531,8 @@ script = ExtResource("1_5vujo")
 position = Vector2(7, -4)
 scale = Vector2(0.7062305, 0.769414)
 sprite_frames = SubResource("SpriteFrames_wrm1d")
-animation = &"idle"
-frame_progress = 0.2783337
+animation = &"jump"
+frame_progress = 0.100333326
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Character" unique_id=534402684]
 shape = SubResource("CapsuleShape2D_3dryh")
@@ -2582,7 +2582,6 @@ layout_mode = 2
 layout_mode = 0
 offset_right = 40.0
 offset_bottom = 23.0
-text = "AHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH"
 
 [node name="PanelContainer2" type="PanelContainer" parent="UI/BoxContainer" unique_id=1725697269]
 layout_mode = 2

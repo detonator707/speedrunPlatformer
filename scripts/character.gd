@@ -37,6 +37,12 @@ func _physics_process(delta: float) -> void:
 		animSprite.play("idle")
 	else:
 		animSprite.play("run")
+		if direction == 1:
+			if(animSprite.scale.x < -1):
+				animSprite.scale.x *= -1
+		else:
+			if(animSprite.scale.x > -1):
+				animSprite.scale.x *= -1
 		
 	if is_on_floor():
 		jumps_left = extra_jumps

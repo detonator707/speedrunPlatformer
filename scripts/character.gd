@@ -25,7 +25,7 @@ func _physics_process(delta: float) -> void:
 			animSprite.play("jump")
 			velocity.y = JUMP_VELOCITY
 			jumps_left = extra_jumps
-		elif jumps_left > 0:
+		elif has_double_jump && jumps_left > 0:
 			animSprite.play("jump")
 			velocity.y = JUMP_VELOCITY
 			jumps_left -= 1

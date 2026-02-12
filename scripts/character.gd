@@ -4,6 +4,14 @@ extends CharacterBody2D
 
 const SPEED = 300.0
 const JUMP_VELOCITY = -400.0
+@export var has_double_jump := false
+@export var extra_jumps := 0
+var jumps_left := 0
+
+func enable_double_jump(amount := 1) -> void:
+	has_double_jump = true
+	extra_jumps += amount
+	jumps_left = extra_jumps
 
 
 func _physics_process(delta: float) -> void:
@@ -12,14 +20,27 @@ func _physics_process(delta: float) -> void:
 		velocity += get_gravity() * delta
 	var direction := Input.get_axis("left", "right")
 	# Handle jump.
-	if is_on_floor() and Input.is_action_pressed("ui_accept"):
-		animSprite.play("jump")
-		velocity.y = JUMP_VELOCITY
-	elif direction == 0 and is_on_floor():
-		animSprite.play("idle")
-	#else:
-		#animSprite.play("run")
+	if Input.is_action_just_pressed("ui_accept"):
+		if is_on_floor():
+			animSprite.play("jump")
+			velocity.y = JUMP_VELOCITY
+			jumps_left = extra_jumps
+		elif jumps_left > 0:
+			animSprite.play("jump")
+			velocity.y = JUMP_VELOCITY
+			jumps_left -= 1
 
+
+	if not is_on_floor():
+		animSprite.play("jump")
+	elif direction == 0:
+		animSprite.play("idle")
+	else:
+		animSprite.play("run")
+		
+	if is_on_floor():
+		jumps_left = extra_jumps
+		
 	# Get the input direction and handle the movement/deceleration.da
 	# As good practice, you should replace UI actions with custom gameplay actions.
 	

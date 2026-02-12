@@ -2,7 +2,33 @@
 
 [ext_resource type="Script" uid="uid://dd3wv5rn34glm" path="res://scripts/character.gd" id="1_5vujo"]
 [ext_resource type="Texture2D" uid="uid://b7t68qqoyi416" path="res://sprites/temp/brownSquare.png" id="2_qxrlw"]
-[ext_resource type="Texture2D" uid="uid://conqa26vjqans" path="res://sprites/temp/redSquare.png" id="2_wrm1d"]
+[ext_resource type="Texture2D" uid="uid://c5vud0rflfl2a" path="res://sprites/characters/Pibble/pixil-frame-0.png" id="2_wrm1d"]
+[ext_resource type="Texture2D" uid="uid://brfoxrdhq1x3h" path="res://sprites/characters/Pibble/sprite_idle0.png" id="3_cwurv"]
+[ext_resource type="Texture2D" uid="uid://3uufqi15e74f" path="res://sprites/characters/Pibble/sprite_idle2.png" id="4_mucmn"]
+[ext_resource type="Texture2D" uid="uid://y2epe8bjuuy2" path="res://sprites/characters/Pibble/sprite_idle1.png" id="5_8m3t6"]
+[ext_resource type="Texture2D" uid="uid://dcvj2lcaf0cpm" path="res://sprites/characters/Pibble/sprite_idle3.png" id="6_ese38"]
+[ext_resource type="Texture2D" uid="uid://bynxs7m3qrqpt" path="res://sprites/characters/Pibble/sprite_jump00.png" id="7_oeip8"]
+[ext_resource type="Texture2D" uid="uid://dxmrmkjf6lcu3" path="res://sprites/characters/Pibble/sprite_jump01.png" id="8_xe308"]
+[ext_resource type="Texture2D" uid="uid://dy1j0ii5or3t" path="res://sprites/characters/Pibble/sprite_jump02.png" id="9_d3cha"]
+[ext_resource type="Texture2D" uid="uid://55ccmgnf1bkh" path="res://sprites/characters/Pibble/sprite_jump03.png" id="10_i26dy"]
+[ext_resource type="Texture2D" uid="uid://dnwkbed1crp1c" path="res://sprites/characters/Pibble/sprite_jump04.png" id="11_lmoi6"]
+[ext_resource type="Texture2D" uid="uid://dghmhvhkqyxsy" path="res://sprites/characters/Pibble/sprite_jump05.png" id="12_6uxt2"]
+[ext_resource type="Texture2D" uid="uid://dqbmw0ievg4xt" path="res://sprites/characters/Pibble/sprite_jump06.png" id="13_ym3tv"]
+[ext_resource type="Texture2D" uid="uid://bhcghp7e74qvv" path="res://sprites/characters/Pibble/sprite_jump07.png" id="14_bwj6o"]
+[ext_resource type="Texture2D" uid="uid://cnvkib2egss8y" path="res://sprites/characters/Pibble/sprite_jump08.png" id="15_f3c8l"]
+[ext_resource type="Texture2D" uid="uid://dttfi0gta3bi4" path="res://sprites/characters/Pibble/sprite_jump09.png" id="16_bu0y5"]
+[ext_resource type="Texture2D" uid="uid://cm66eu6yerqy3" path="res://sprites/characters/Pibble/sprite_jump10.png" id="17_6a4tp"]
+[ext_resource type="Texture2D" uid="uid://obiv2d0p7mb8" path="res://sprites/characters/Pibble/sprite_jump11.png" id="18_631el"]
+[ext_resource type="Texture2D" uid="uid://damjqekar40xw" path="res://sprites/characters/Pibble/sprite_jump12.png" id="19_vs120"]
+[ext_resource type="Texture2D" uid="uid://wtdn7np5cdju" path="res://sprites/characters/Pibble/sprite_jump13.png" id="20_v2cs8"]
+[ext_resource type="Texture2D" uid="uid://t6afxotah24i" path="res://sprites/characters/Pibble/pixil-gif-drawing (2)-1.png.png" id="21_32sfa"]
+[ext_resource type="Texture2D" uid="uid://b4oeau0kor45c" path="res://sprites/characters/Pibble/sprite_run07.png" id="22_titue"]
+[ext_resource type="Texture2D" uid="uid://ceqi6qk2cshh7" path="res://sprites/characters/Pibble/sprite_run00.png" id="23_tt7mg"]
+[ext_resource type="Texture2D" uid="uid://dq5vfijgjqj3j" path="res://sprites/characters/Pibble/sprite_run01.png" id="24_htg8p"]
+[ext_resource type="Texture2D" uid="uid://nu1jk1u6qmsl" path="res://sprites/characters/Pibble/sprite_run02.png" id="25_jcvim"]
+[ext_resource type="Texture2D" uid="uid://ssskchpt4x8" path="res://sprites/characters/Pibble/sprite_run03.png" id="26_fnkle"]
+[ext_resource type="Texture2D" uid="uid://c4b2fofa17w1w" path="res://sprites/characters/Pibble/sprite_run04.png" id="27_wr3wg"]
+[ext_resource type="Texture2D" uid="uid://e1yq7o8afw5y" path="res://sprites/characters/Pibble/sprite_run05.png" id="28_6xvgv"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_wrm1d"]
 animations = [{
@@ -11,8 +37,106 @@ animations = [{
 "texture": ExtResource("2_wrm1d")
 }],
 "loop": true,
-"name": &"Idle",
+"name": &"frame0",
 "speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_cwurv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_mucmn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_8m3t6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_ese38")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 4.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_oeip8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_xe308")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_d3cha")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_i26dy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_lmoi6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_6uxt2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_ym3tv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_bwj6o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_f3c8l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_bu0y5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_6a4tp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_631el")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_vs120")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_v2cs8")
+}],
+"loop": true,
+"name": &"jump",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("21_32sfa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_titue")
+}],
+"loop": true,
+"name": &"run",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("23_tt7mg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_htg8p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_jcvim")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_fnkle")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_wr3wg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_6xvgv")
+}],
+"loop": true,
+"name": &"runTransform",
+"speed": 10.0
 }]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_3dryh"]
@@ -2404,9 +2528,11 @@ collision_mask = 65535
 script = ExtResource("1_5vujo")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Character" unique_id=1828263339]
-scale = Vector2(0.009791717, 0.016874999)
+position = Vector2(7, -4)
+scale = Vector2(0.7062305, 0.769414)
 sprite_frames = SubResource("SpriteFrames_wrm1d")
-animation = &"Idle"
+animation = &"idle"
+frame_progress = 0.2783337
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Character" unique_id=534402684]
 shape = SubResource("CapsuleShape2D_3dryh")
@@ -2419,3 +2545,47 @@ shape = SubResource("CapsuleShape2D_3dryh")
 tile_set = SubResource("TileSet_wrm1d")
 format = 2
 layer_0/tile_data = PackedInt32Array(65528, 458753, 15, 65529, 458753, 15, 65530, 458753, 15, 65531, 458753, 15, 65532, 458753, 15, 65533, 458753, 15, 65534, 458753, 15, 65535, 458753, 15, 0, 458753, 15, 1, 458753, 15, 2, 458753, 15, 3, 458753, 15, 4, 458753, 15, 5, 458753, 15, 6, 458753, 15, 7, 458753, 15, 8, 458753, 15, 9, 458753, 15, 10, 458753, 15, 11, 458753, 15, 12, 458753, 15, 13, 458753, 15, 14, 458753, 15, 15, 458753, 15, 16, 458753, 15, 17, 458753, 15, 18, 458753, 15, 19, 458753, 15, 65523, 458753, 15, 65524, 458753, 15, 65525, 458753, 15, 65526, 458753, 15, 65527, 458753, 15)
+
+[node name="UI" type="Control" parent="." unique_id=184240504]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1153.0
+offset_bottom = 649.0
+
+[node name="FinishPerkBox" type="Container" parent="UI" unique_id=817815057]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 5.3500004
+anchor_top = 2.5
+anchor_right = 24.550001
+anchor_bottom = 13.1
+offset_left = -1.5258789e-05
+offset_right = -6.1035156e-05
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="BoxContainer" type="BoxContainer" parent="UI" unique_id=288898905]
+layout_mode = 0
+offset_left = 169.0
+offset_top = 124.0
+offset_right = 992.0
+offset_bottom = 514.0
+vertical = true
+
+[node name="PanelContainer" type="PanelContainer" parent="UI/BoxContainer" unique_id=122478258]
+layout_mode = 2
+
+[node name="Panel" type="Panel" parent="UI/BoxContainer/PanelContainer" unique_id=1021404426]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="UI/BoxContainer/PanelContainer/Panel" unique_id=757991593]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "AHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH"
+
+[node name="PanelContainer2" type="PanelContainer" parent="UI/BoxContainer" unique_id=1725697269]
+layout_mode = 2
+
+[node name="PanelContainer3" type="PanelContainer" parent="UI/BoxContainer" unique_id=806782148]
+layout_mode = 2

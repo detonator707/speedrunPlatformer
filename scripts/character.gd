@@ -42,10 +42,12 @@ func _physics_process(delta: float) -> void:
 	else:
 		animSprite.play("run")
 		if direction == 1:
-			if(animSprite.scale.x < -1):
+			if(animSprite.scale.x < -.5):
+				animSprite.position.x = 7
 				animSprite.scale.x *= -1
 		else:
-			if(animSprite.scale.x > -1):
+			if(animSprite.scale.x > -.5):
+				animSprite.position.x = -7
 				animSprite.scale.x *= -1
 		
 	if is_on_floor():

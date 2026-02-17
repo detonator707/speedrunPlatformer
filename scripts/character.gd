@@ -2,6 +2,7 @@ extends CharacterBody2D
 
 @onready var animSprite = get_node("AnimatedSprite2D")
 
+var prevAnimation = ""
 const SPEED = 300.0
 const JUMP_VELOCITY = -400.0
 @export var has_double_jump := false
@@ -37,10 +38,15 @@ func _physics_process(delta: float) -> void:
 
 	if not is_on_floor():
 		animSprite.play("jump")
+		prevAnimation = "jump"
 	elif direction == 0:
 		animSprite.play("idle")
+		prevAnimation = "idle"
 	else:
-		animSprite.play("run")
+		if prevAnimation != "run":
+			animSprite.play("runTransform")
+		else:
+			print("temp")
 		if direction == 1:
 			if(animSprite.scale.x < -.5):
 				animSprite.position.x = 7
@@ -49,7 +55,7 @@ func _physics_process(delta: float) -> void:
 			if(animSprite.scale.x > -.5):
 				animSprite.position.x = -7
 				animSprite.scale.x *= -1
-		
+	
 	if is_on_floor():
 		jumps_left = extra_jumps
 		

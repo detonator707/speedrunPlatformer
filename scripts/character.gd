@@ -25,10 +25,14 @@ func _physics_process(delta: float) -> void:
 			animSprite.play("jump")
 			velocity.y = JUMP_VELOCITY
 			jumps_left = extra_jumps
-		elif jumps_left > 0:
+		elif has_double_jump && jumps_left > 0:
 			animSprite.play("jump")
 			velocity.y = JUMP_VELOCITY
 			jumps_left -= 1
+			
+	if Input.is_action_just_pressed("dash"):
+		direction = 2000
+		move_and_slide()
 
 
 	if not is_on_floor():

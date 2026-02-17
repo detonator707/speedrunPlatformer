@@ -49,7 +49,7 @@ func _physics_process(delta: float) -> void:
 		if prevAnimation != "run":
 			animSprite.play("runTransform")
 		else:
-			print("temp")
+			animSprite.play("run")
 		if direction == 1:
 			if(animSprite.scale.x < -.5):
 				animSprite.position.x = 7
@@ -71,3 +71,10 @@ func _physics_process(delta: float) -> void:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 
 	move_and_slide()
+
+
+func _on_animated_sprite_2d_animation_finished() -> void:
+	if(animSprite.animation == "runTransform"):
+		animSprite.play("run")
+		print("heyyyyy")
+		prevAnimation = "run"

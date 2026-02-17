@@ -17,7 +17,7 @@ func _process(delta: float) -> void:
 
 
 func _on_body_entered(body: Node) -> void:
-	# We only care about the player
+
 	if body.has_method("enable_double_jump"):
 		body.enable_double_jump(extra_jumps)
 		queue_free()

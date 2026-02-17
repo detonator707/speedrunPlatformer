@@ -31,7 +31,10 @@ func _physics_process(delta: float) -> void:
 			jumps_left -= 1
 			
 	if Input.is_action_just_pressed("dash"):
-		direction = 2000
+		if direction < 0:
+			direction = -20
+		elif direction > 0:
+			direction = 20
 		move_and_slide()
 
 

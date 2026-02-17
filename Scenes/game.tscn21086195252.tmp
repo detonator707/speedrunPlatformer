@@ -7,6 +7,8 @@
 [ext_resource type="Texture2D" uid="uid://3uufqi15e74f" path="res://sprites/characters/Pibble/sprite_idle2.png" id="4_mucmn"]
 [ext_resource type="Texture2D" uid="uid://y2epe8bjuuy2" path="res://sprites/characters/Pibble/sprite_idle1.png" id="5_8m3t6"]
 [ext_resource type="Texture2D" uid="uid://dcvj2lcaf0cpm" path="res://sprites/characters/Pibble/sprite_idle3.png" id="6_ese38"]
+[ext_resource type="Texture2D" uid="uid://bynxs7m3qrqpt" path="res://sprites/characters/Pibble/sprite_jump00.png" id="7_oeip8"]
+[ext_resource type="Texture2D" uid="uid://dxmrmkjf6lcu3" path="res://sprites/characters/Pibble/sprite_jump01.png" id="8_xe308"]
 [ext_resource type="Texture2D" uid="uid://dy1j0ii5or3t" path="res://sprites/characters/Pibble/sprite_jump02.png" id="9_d3cha"]
 [ext_resource type="Texture2D" uid="uid://55ccmgnf1bkh" path="res://sprites/characters/Pibble/sprite_jump03.png" id="10_i26dy"]
 [ext_resource type="Texture2D" uid="uid://dnwkbed1crp1c" path="res://sprites/characters/Pibble/sprite_jump04.png" id="11_lmoi6"]
@@ -57,6 +59,12 @@ animations = [{
 "speed": 4.0
 }, {
 "frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_oeip8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_xe308")
+}, {
 "duration": 1.0,
 "texture": ExtResource("9_d3cha")
 }, {
@@ -2551,7 +2559,7 @@ script = ExtResource("1_5vujo")
 position = Vector2(7, -4)
 scale = Vector2(0.7062305, 0.769414)
 sprite_frames = SubResource("SpriteFrames_wrm1d")
-animation = &"jump"
+animation = &"runTransformBackwards"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Character" unique_id=534402684]
 shape = SubResource("CapsuleShape2D_3dryh")

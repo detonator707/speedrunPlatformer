@@ -41,16 +41,23 @@ func _physics_process(delta: float) -> void:
 
 
 	if not is_on_floor():
-		animSprite.play("jump")
-		prevAnimation = "jump"
+		if(prevAnimation != "jump" && prevAnimation != "idle"):
+			animSprite.play("runTransformBackwards")
+			prevAnimation = "runTransformBackwardsJ"
+		else:
+			animSprite.play("jump")
 	elif direction == 0:
-		animSprite.play("idle")
-		prevAnimation = "idle"
+		if(prevAnimation != "idle"):
+			animSprite.play("runTransformBackwards")
+			prevAnimation = "runTransformBackwardsI"
+		else:
+			animSprite.play("idle")
 	else:
 		if prevAnimation != "run":
 			animSprite.play("runTransform")
+			prevAnimation = "runTransform"
 		else:
-			print("temp")
+			animSprite.play("run")
 		if direction == 1:
 			if(animSprite.scale.x < -.5):
 				animSprite.position.x = 7
@@ -72,3 +79,17 @@ func _physics_process(delta: float) -> void:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 
 	move_and_slide()
+
+
+func _on_animated_sprite_2d_animation_finished() -> void:
+	if(animSprite.animation == "runTransform"):
+		animSprite.play("run")
+		prevAnimation = "run"
+	elif(prevAnimation == "runTransformBackwardsI"):
+		print("idle")
+		animSprite.play("idle")
+		prevAnimation = "idle"
+	elif(prevAnimation == "runTransformBackwardsJ"):
+		print("jump")
+		animSprite.play("jump")
+		prevAnimation = "jump"

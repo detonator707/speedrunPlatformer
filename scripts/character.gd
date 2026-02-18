@@ -86,10 +86,8 @@ func _on_animated_sprite_2d_animation_finished() -> void:
 		animSprite.play("run")
 		prevAnimation = "run"
 	elif(prevAnimation == "runTransformBackwardsI"):
-		print("idle")
 		animSprite.play("idle")
 		prevAnimation = "idle"
 	elif(prevAnimation == "runTransformBackwardsJ"):
-		print("jump")
 		animSprite.play("jump")
 		prevAnimation = "jump"

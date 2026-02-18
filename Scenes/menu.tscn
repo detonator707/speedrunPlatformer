@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://t0nmogbob6c4"]
+
+[ext_resource type="Script" uid="uid://b54siabsrqvtb" path="res://Scenes/menu.gd" id="1_1rerr"]
+
+[node name="Menu" type="Node2D" unique_id=1925733220]
+position = Vector2(-2, 538)
+script = ExtResource("1_1rerr")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1726981526]
+offset_left = 3.0
+offset_top = 2.0
+offset_right = 236.0
+offset_bottom = 103.0
+
+[node name="Start" type="Button" parent="VBoxContainer" unique_id=857281850]
+layout_mode = 2
+action_mode = 0
+text = "Start Game"
+
+[node name="Controls" type="Button" parent="VBoxContainer" unique_id=227492270]
+layout_mode = 2
+text = "Settings"
+
+[node name="Exit" type="Button" parent="VBoxContainer" unique_id=1214894370]
+layout_mode = 2
+text = "Get me out of here "
+
+[connection signal="pressed" from="VBoxContainer/Start" to="." method="_on_start_pressed"]

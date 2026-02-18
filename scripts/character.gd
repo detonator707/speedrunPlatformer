@@ -5,8 +5,8 @@ extends CharacterBody2D
 var prevAnimation = ""
 const SPEED = 300.0
 const JUMP_VELOCITY = -400.0
-@export var has_double_jump := false
-@export var extra_jumps := 0
+@export var has_double_jump := true
+@export var extra_jumps := 2
 var jumps_left := 0
 
 func enable_double_jump(amount := 1) -> void:
@@ -36,7 +36,6 @@ func _physics_process(delta: float) -> void:
 			direction = -20
 		elif direction > 0:
 			direction = 20
-		
 		move_and_slide()
 
 

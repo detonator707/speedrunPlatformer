@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://t0nmogbob6c4"]
 
-[ext_resource type="Script" uid="uid://b54siabsrqvtb" path="res://Scenes/menu.gd" id="1_1rerr"]
+[ext_resource type="Script" uid="uid://b54siabsrqvtb" path="res://scripts/menu.gd" id="1_1rerr"]
 
 [node name="Menu" type="Node2D" unique_id=1925733220]
 position = Vector2(-2, 538)

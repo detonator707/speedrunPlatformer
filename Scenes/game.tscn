@@ -27,7 +27,7 @@
 [ext_resource type="Texture2D" uid="uid://ssskchpt4x8" path="res://sprites/characters/Pibble/sprite_run03.png" id="26_fnkle"]
 [ext_resource type="Texture2D" uid="uid://c4b2fofa17w1w" path="res://sprites/characters/Pibble/sprite_run04.png" id="27_wr3wg"]
 [ext_resource type="Texture2D" uid="uid://e1yq7o8afw5y" path="res://sprites/characters/Pibble/sprite_run05.png" id="28_6xvgv"]
-[ext_resource type="Script" uid="uid://h3d3jq12831p" path="res://Scenes/killzone.gd" id="30_mucmn"]
+[ext_resource type="Script" uid="uid://h3d3jq12831p" path="res://scripts/killzone.gd" id="30_mucmn"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_wrm1d"]
 animations = [{
@@ -2559,21 +2559,9 @@ shape = SubResource("CapsuleShape2D_3dryh")
 [node name="Camera2D" type="Camera2D" parent="Character" unique_id=1060664000]
 zoom = Vector2(1.5, 1.5)
 
-[node name="Map" type="Node" parent="." unique_id=1717265281]
+[node name="UI" type="CanvasLayer" parent="Character/Camera2D" unique_id=2001274953]
 
-[node name="TileMap" type="TileMap" parent="Map" unique_id=1747482695]
-tile_set = SubResource("TileSet_wrm1d")
-format = 2
-layer_0/tile_data = PackedInt32Array(65528, 458753, 15, 65529, 458753, 15, 65530, 458753, 15, 65531, 458753, 15, 65532, 458753, 15, 65533, 458753, 15, 65534, 458753, 15, 65535, 458753, 15, 0, 458753, 15, 1, 458753, 15, 2, 458753, 15, 3, 458753, 15, 4, 458753, 15, 5, 458753, 15, 6, 458753, 15, 7, 458753, 15, 8, 458753, 15, 9, 458753, 15, 10, 458753, 15, 11, 458753, 15, 12, 458753, 15, 13, 458753, 15, 14, 458753, 15, 15, 458753, 15, 16, 458753, 15, 17, 458753, 15, 18, 458753, 15, 19, 458753, 15, 65523, 655361, 7, 65524, 458753, 15, 65525, 458753, 15, 65526, 458753, 15, 65527, 458753, 15, 65522, 655361, 7, 65521, 655361, 7, 65520, 655361, 7, 65519, 655361, 7, 65518, 655361, 7, 65517, 655361, 7, 65516, 655361, 7, 65515, 655361, 7, 65514, 655361, 7, 65513, 655361, 7, 20, 1114113, 21, 21, 1114113, 21, 22, 1114113, 21, 23, 1114113, 21, 24, 851969, 31, 65511, 851969, 31, 65512, 851969, 31, 25, 851969, 31)
-
-[node name="UI" type="Control" parent="." unique_id=184240504]
-layout_mode = 3
-anchors_preset = 0
-offset_right = 1153.0
-offset_bottom = 649.0
-
-[node name="FinishPerkBox" type="Container" parent="UI" unique_id=817815057]
-layout_mode = 1
+[node name="FinishPerkBox" type="Container" parent="Character/Camera2D/UI" unique_id=817815057]
 anchors_preset = -1
 anchor_left = 5.3500004
 anchor_top = 2.5
@@ -2584,30 +2572,50 @@ offset_right = -6.1035156e-05
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="BoxContainer" type="BoxContainer" parent="UI" unique_id=288898905]
+[node name="Panel" type="Panel" parent="Character/Camera2D/UI" unique_id=1280836009]
+anchors_preset = -1
+anchor_right = 0.035
+anchor_bottom = 0.062000003
+offset_left = 116.0
+offset_top = 95.0
+offset_right = 992.68
+offset_bottom = 511.824
+
+[node name="BoxContainer" type="BoxContainer" parent="Character/Camera2D/UI/Panel" unique_id=288898905]
 layout_mode = 0
-offset_left = 169.0
-offset_top = 124.0
-offset_right = 992.0
-offset_bottom = 514.0
-vertical = true
+offset_left = 49.0
+offset_top = 35.0
+offset_right = 872.0
+offset_bottom = 425.0
+theme_override_constants/separation = 60
 
-[node name="PanelContainer" type="PanelContainer" parent="UI/BoxContainer" unique_id=122478258]
+[node name="PanelContainer" type="PanelContainer" parent="Character/Camera2D/UI/Panel/BoxContainer" unique_id=122478258]
+custom_minimum_size = Vector2(230, 0)
 layout_mode = 2
 
-[node name="Panel" type="Panel" parent="UI/BoxContainer/PanelContainer" unique_id=1021404426]
+[node name="Panel" type="Panel" parent="Character/Camera2D/UI/Panel/BoxContainer/PanelContainer" unique_id=1021404426]
 layout_mode = 2
 
-[node name="Label" type="Label" parent="UI/BoxContainer/PanelContainer/Panel" unique_id=757991593]
+[node name="Label" type="Label" parent="Character/Camera2D/UI/Panel/BoxContainer/PanelContainer/Panel" unique_id=757991593]
 layout_mode = 0
 offset_right = 40.0
 offset_bottom = 23.0
+text = "TRAH8HROIWOIAPMRQOICIMEPIWQMPOIMQ"
 
-[node name="PanelContainer2" type="PanelContainer" parent="UI/BoxContainer" unique_id=1725697269]
+[node name="PanelContainer2" type="PanelContainer" parent="Character/Camera2D/UI/Panel/BoxContainer" unique_id=1725697269]
+custom_minimum_size = Vector2(230, 0)
 layout_mode = 2
 
-[node name="PanelContainer3" type="PanelContainer" parent="UI/BoxContainer" unique_id=806782148]
+[node name="PanelContainer3" type="PanelContainer" parent="Character/Camera2D/UI/Panel/BoxContainer" unique_id=806782148]
+custom_minimum_size = Vector2(230, 0)
 layout_mode = 2
+
+[node name="Map" type="Node" parent="." unique_id=1717265281]
+
+[node name="TileMap" type="TileMap" parent="Map" unique_id=1747482695]
+tile_set = SubResource("TileSet_wrm1d")
+format = 2
+layer_0/tile_data = PackedInt32Array(65528, 458753, 15, 65529, 458753, 15, 65530, 458753, 15, 65531, 458753, 15, 65532, 458753, 15, 65533, 458753, 15, 65534, 458753, 15, 65535, 458753, 15, 0, 458753, 15, 1, 458753, 15, 2, 458753, 15, 3, 458753, 15, 4, 458753, 15, 5, 458753, 15, 6, 458753, 15, 7, 458753, 15, 8, 458753, 15, 9, 458753, 15, 10, 458753, 15, 11, 458753, 15, 12, 458753, 15, 13, 458753, 15, 14, 458753, 15, 15, 458753, 15, 16, 458753, 15, 17, 458753, 15, 18, 458753, 15, 19, 458753, 15, 65523, 655361, 7, 65524, 458753, 15, 65525, 458753, 15, 65526, 458753, 15, 65527, 458753, 15, 65522, 655361, 7, 65521, 655361, 7, 65520, 655361, 7, 65519, 655361, 7, 65518, 655361, 7, 65517, 655361, 7, 65516, 655361, 7, 65515, 655361, 7, 65514, 655361, 7, 65513, 655361, 7)
 
 [node name="Area2D" type="Area2D" parent="." unique_id=1267185119]
 script = ExtResource("30_mucmn")

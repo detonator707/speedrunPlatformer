@@ -36,6 +36,7 @@ func _physics_process(delta: float) -> void:
 			direction = -20
 		elif direction > 0:
 			direction = 20
+		
 		move_and_slide()
 
 

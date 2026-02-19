@@ -138,6 +138,7 @@ animations = [{
 }]
 
 [node name="Dash" type="Node2D" unique_id=639956855]
+process_mode = 3
 
 [node name="Panel" type="Panel" parent="." unique_id=1543282046]
 offset_right = 363.0

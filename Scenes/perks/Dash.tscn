@@ -1,0 +1,166 @@
+[gd_scene format=3 uid="uid://ch0tw0yvpc0o7"]
+
+[ext_resource type="Texture2D" uid="uid://cjak0a0ggvvn" path="res://sprites/items/Perks/Perks/dash1.png" id="1_wa1c8"]
+[ext_resource type="Texture2D" uid="uid://dmskhlws2g3pd" path="res://sprites/items/Perks/Perks/dash2.png" id="2_hrtfk"]
+[ext_resource type="Texture2D" uid="uid://dfn5xw0asixq7" path="res://sprites/items/Perks/Perks/dash3.png" id="3_0coni"]
+[ext_resource type="Texture2D" uid="uid://bichckerbunnj" path="res://sprites/items/Perks/Perks/dash4.png" id="4_0l7hh"]
+[ext_resource type="Texture2D" uid="uid://bmmfrvdvhssp2" path="res://sprites/items/Perks/Perks/dash5.png" id="5_xpene"]
+[ext_resource type="Texture2D" uid="uid://cooo03j8wddo1" path="res://sprites/items/Perks/Perks/dash6.png" id="6_rxdgn"]
+[ext_resource type="Texture2D" uid="uid://ckap3p7hcys6o" path="res://sprites/items/Perks/Perks/dash7.png" id="7_blpxu"]
+[ext_resource type="Texture2D" uid="uid://danbjge6skdir" path="res://sprites/items/Perks/Perks/dash8.png" id="8_6pclf"]
+[ext_resource type="Texture2D" uid="uid://epriivvfwll3" path="res://sprites/items/Perks/Perks/dash9.png" id="9_ixyuf"]
+[ext_resource type="Texture2D" uid="uid://hsf1kutrh0bt" path="res://sprites/items/Perks/Perks/dash10.png" id="10_ogujm"]
+[ext_resource type="Texture2D" uid="uid://da6pbxt5u3w" path="res://sprites/items/Perks/Perks/dash11.png" id="11_6q0f1"]
+[ext_resource type="Texture2D" uid="uid://d0vb2cvd8gc7c" path="res://sprites/items/Perks/Perks/dash12.png" id="12_ci244"]
+[ext_resource type="Texture2D" uid="uid://cwqmj2bl3dej1" path="res://sprites/items/Perks/Perks/dash13.png" id="13_a3qjg"]
+[ext_resource type="Texture2D" uid="uid://7q65dmeck3to" path="res://sprites/items/Perks/Perks/dash14.png" id="14_6dogv"]
+[ext_resource type="Texture2D" uid="uid://dnclvt6ywhib8" path="res://sprites/items/Perks/Perks/dash15.png" id="15_cubx7"]
+[ext_resource type="Texture2D" uid="uid://dia8ytta4ltio" path="res://sprites/items/Perks/Perks/dash16.png" id="16_jqqq3"]
+[ext_resource type="Texture2D" uid="uid://dbaeerphtfa0m" path="res://sprites/items/Perks/Perks/dash17.png" id="17_27k2n"]
+[ext_resource type="Texture2D" uid="uid://dqtt4hrhcf73v" path="res://sprites/items/Perks/Perks/dash18.png" id="18_n3b4e"]
+[ext_resource type="Texture2D" uid="uid://e03b5fe5j6a6" path="res://sprites/items/Perks/Perks/dash19.png" id="19_ke1j2"]
+[ext_resource type="Texture2D" uid="uid://u4ka4q1fhvrp" path="res://sprites/items/Perks/Perks/dash20.png" id="20_bqj7y"]
+[ext_resource type="Texture2D" uid="uid://dluhoa0xkhfuc" path="res://sprites/items/Perks/Perks/dash21.png" id="21_2bs48"]
+[ext_resource type="Texture2D" uid="uid://ocxxq75w2vxn" path="res://sprites/items/Perks/Perks/dash22.png" id="22_rdiox"]
+[ext_resource type="Texture2D" uid="uid://b2rpff4r8i7qx" path="res://sprites/items/Perks/Perks/dash23.png" id="23_71abr"]
+[ext_resource type="Texture2D" uid="uid://b58iad6owgxo7" path="res://sprites/items/Perks/Perks/dash24.png" id="24_csxtw"]
+[ext_resource type="Texture2D" uid="uid://dfaoph4dri74c" path="res://sprites/items/Perks/Perks/dash25.png" id="25_sdf1y"]
+[ext_resource type="Texture2D" uid="uid://c2ne24o3la1te" path="res://sprites/items/Perks/Perks/dash26.png" id="26_oesx8"]
+[ext_resource type="Texture2D" uid="uid://cf1va8jg0c45d" path="res://sprites/items/Perks/Perks/dash27.png" id="27_nmr6p"]
+[ext_resource type="Texture2D" uid="uid://dwl1ek4qkcspa" path="res://sprites/items/Perks/Perks/dash28.png" id="28_yshr5"]
+[ext_resource type="Texture2D" uid="uid://gsr7cc2fwuh" path="res://sprites/items/Perks/Perks/dash29.png" id="29_ssemd"]
+[ext_resource type="Texture2D" uid="uid://1tslgub7s14j" path="res://sprites/items/Perks/Perks/dash30.png" id="30_x1km8"]
+
+[sub_resource type="SystemFont" id="SystemFont_kongj"]
+font_names = PackedStringArray("Castellar")
+subpixel_positioning = 0
+
+[sub_resource type="LabelSettings" id="LabelSettings_v3yb0"]
+font = SubResource("SystemFont_kongj")
+font_size = 26
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_n8if4"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_wa1c8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_hrtfk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_0coni")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_0l7hh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_xpene")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_rxdgn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_blpxu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_6pclf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_ixyuf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_ogujm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_6q0f1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_ci244")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_a3qjg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_6dogv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_cubx7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_jqqq3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_27k2n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_n3b4e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_ke1j2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_bqj7y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_2bs48")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_rdiox")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_71abr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_csxtw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_sdf1y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_oesx8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_nmr6p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_yshr5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_ssemd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_x1km8")
+}],
+"loop": true,
+"name": &"default",
+"speed": 15.0
+}]
+
+[node name="Dash" type="Node2D" unique_id=639956855]
+
+[node name="Panel" type="Panel" parent="." unique_id=1543282046]
+offset_right = 363.0
+offset_bottom = 480.0
+
+[node name="Label" type="Label" parent="Panel" unique_id=2076552862]
+layout_mode = 0
+offset_left = 107.0
+offset_top = 37.0
+offset_right = 269.0
+offset_bottom = 69.0
+text = "Dash Perk"
+label_settings = SubResource("LabelSettings_v3yb0")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Panel" unique_id=795464571]
+position = Vector2(187, 192)
+scale = Vector2(8.21875, 7.6875)
+sprite_frames = SubResource("SpriteFrames_n8if4")
+frame_progress = 0.8287383
+
+[node name="Button" type="Button" parent="." unique_id=2031180811]
+offset_left = 130.0
+offset_top = 331.0
+offset_right = 252.0
+offset_bottom = 366.0
+text = "+1 Please"

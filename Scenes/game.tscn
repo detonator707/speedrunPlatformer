@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://o326png8lyqm"]
 
-[ext_resource type="Script" uid="uid://dd3wv5rn34glm" path="res://scripts/character.gd" id="1_5vujo"]
-[ext_resource type="Script" uid="uid://mow5d12vyrsb" path="res://Scenes/game.gd" id="1_cwurv"]
+[ext_resource type="Script" uid="uid://dd3wv5rn34glm" path="res://scripts/game/character.gd" id="1_5vujo"]
+[ext_resource type="Script" uid="uid://mow5d12vyrsb" path="res://scripts/game/game.gd" id="1_cwurv"]
 [ext_resource type="Texture2D" uid="uid://b7t68qqoyi416" path="res://sprites/temp/brownSquare.png" id="2_qxrlw"]
 [ext_resource type="Texture2D" uid="uid://c5vud0rflfl2a" path="res://sprites/characters/Pibble/pixil-frame-0.png" id="2_wrm1d"]
 [ext_resource type="Texture2D" uid="uid://brfoxrdhq1x3h" path="res://sprites/characters/Pibble/sprite_idle0.png" id="3_cwurv"]
@@ -28,7 +28,7 @@
 [ext_resource type="Texture2D" uid="uid://ssskchpt4x8" path="res://sprites/characters/Pibble/sprite_run03.png" id="26_fnkle"]
 [ext_resource type="Texture2D" uid="uid://c4b2fofa17w1w" path="res://sprites/characters/Pibble/sprite_run04.png" id="27_wr3wg"]
 [ext_resource type="Texture2D" uid="uid://e1yq7o8afw5y" path="res://sprites/characters/Pibble/sprite_run05.png" id="28_6xvgv"]
-[ext_resource type="Script" uid="uid://h3d3jq12831p" path="res://scripts/killzone.gd" id="30_mucmn"]
+[ext_resource type="Script" uid="uid://h3d3jq12831p" path="res://scripts/game/killzone.gd" id="30_mucmn"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_wrm1d"]
 animations = [{
@@ -2562,7 +2562,6 @@ shape = SubResource("CapsuleShape2D_3dryh")
 zoom = Vector2(1.5, 1.5)
 
 [node name="UI" type="CanvasLayer" parent="Character/Camera2D" unique_id=2001274953]
-visible = false
 
 [node name="FinishPerkBox" type="Container" parent="Character/Camera2D/UI" unique_id=817815057]
 anchors_preset = -1
@@ -2585,6 +2584,7 @@ offset_right = 1074.68
 offset_bottom = 574.824
 
 [node name="BoxContainer" type="BoxContainer" parent="Character/Camera2D/UI/Panel" unique_id=288898905]
+unique_name_in_owner = true
 layout_mode = 0
 offset_left = 16.0
 offset_top = 16.0
@@ -2595,15 +2595,6 @@ theme_override_constants/separation = 39
 [node name="PanelContainer" type="PanelContainer" parent="Character/Camera2D/UI/Panel/BoxContainer" unique_id=122478258]
 custom_minimum_size = Vector2(315, 550)
 layout_mode = 2
-
-[node name="Panel" type="Panel" parent="Character/Camera2D/UI/Panel/BoxContainer/PanelContainer" unique_id=1021404426]
-layout_mode = 2
-
-[node name="Label" type="Label" parent="Character/Camera2D/UI/Panel/BoxContainer/PanelContainer/Panel" unique_id=757991593]
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 23.0
-text = "TRAH8HROIWOIAPMRQOICIMEPIWQMPOIMQ"
 
 [node name="PanelContainer2" type="PanelContainer" parent="Character/Camera2D/UI/Panel/BoxContainer" unique_id=1725697269]
 custom_minimum_size = Vector2(315, 0)

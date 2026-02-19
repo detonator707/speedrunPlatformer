@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://co0pkifocyf8"]
 
+[ext_resource type="Script" uid="uid://0rfxjgwcpa6q" path="res://scripts/game/perks/double_jump.gd" id="1_ivv2u"]
 [ext_resource type="Texture2D" uid="uid://cquo7soq7bupv" path="res://sprites/items/Perks/Perks/doubleJump3.png" id="1_kongj"]
 [ext_resource type="Texture2D" uid="uid://btase7cv3lhvn" path="res://sprites/items/Perks/Perks/doubleJump2.png" id="2_ivv2u"]
 [ext_resource type="Texture2D" uid="uid://kb7x372vo57f" path="res://sprites/items/Perks/Perks/doubleJump1.png" id="3_7uk3t"]
@@ -53,6 +54,7 @@ animations = [{
 }]
 
 [node name="DoubleJump" type="Node2D" unique_id=571981321]
+script = ExtResource("1_ivv2u")
 
 [node name="Panel" type="Panel" parent="." unique_id=1481813967]
 offset_right = 363.0

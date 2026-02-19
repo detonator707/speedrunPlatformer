@@ -1,3 +1,81 @@
 [gd_scene format=3 uid="uid://co0pkifocyf8"]
 
+[ext_resource type="Texture2D" uid="uid://cquo7soq7bupv" path="res://sprites/items/Perks/Perks/doubleJump3.png" id="1_kongj"]
+[ext_resource type="Texture2D" uid="uid://btase7cv3lhvn" path="res://sprites/items/Perks/Perks/doubleJump2.png" id="2_ivv2u"]
+[ext_resource type="Texture2D" uid="uid://kb7x372vo57f" path="res://sprites/items/Perks/Perks/doubleJump1.png" id="3_7uk3t"]
+[ext_resource type="Texture2D" uid="uid://pfjofdq8nrlt" path="res://sprites/items/Perks/Perks/doubleJump4.png" id="4_os1pj"]
+[ext_resource type="Texture2D" uid="uid://dw56k0d6u4ep0" path="res://sprites/items/Perks/Perks/doubleJump5.png" id="5_y4ybk"]
+[ext_resource type="Texture2D" uid="uid://dwmm1ycco84j4" path="res://sprites/items/Perks/Perks/doubleJump6.png" id="6_dv8xm"]
+[ext_resource type="Texture2D" uid="uid://d4g73rk4ta4wf" path="res://sprites/items/Perks/Perks/doubleJump7.png" id="7_0nvd4"]
+[ext_resource type="Texture2D" uid="uid://c1i0cdsw4uwyn" path="res://sprites/items/Perks/Perks/doubleJump8.png" id="8_svler"]
+[ext_resource type="Texture2D" uid="uid://chve54nf70wdv" path="res://sprites/items/Perks/Perks/doubleJump9.png" id="9_6sxwb"]
+
+[sub_resource type="SystemFont" id="SystemFont_kongj"]
+font_names = PackedStringArray("Castellar")
+
+[sub_resource type="LabelSettings" id="LabelSettings_ivv2u"]
+font = SubResource("SystemFont_kongj")
+font_size = 26
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_4hx71"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_kongj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_ivv2u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_7uk3t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_os1pj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_y4ybk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_dv8xm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_0nvd4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_svler")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_6sxwb")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
 [node name="DoubleJump" type="Node2D" unique_id=571981321]
+
+[node name="Panel" type="Panel" parent="." unique_id=1481813967]
+offset_right = 363.0
+offset_bottom = 480.0
+
+[node name="Label" type="Label" parent="Panel" unique_id=57529518]
+layout_mode = 0
+offset_left = 42.0
+offset_top = 41.0
+offset_right = 329.0
+offset_bottom = 76.0
+text = "Double Jump Perk"
+label_settings = SubResource("LabelSettings_ivv2u")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Panel" unique_id=1450427090]
+position = Vector2(187, 192)
+scale = Vector2(8.21875, 7.6875)
+sprite_frames = SubResource("SpriteFrames_4hx71")
+frame_progress = 0.13009138
+
+[node name="Button" type="Button" parent="." unique_id=1773413279]
+offset_left = 130.0
+offset_top = 331.0
+offset_right = 252.0
+offset_bottom = 366.0
+text = "+1 Please"

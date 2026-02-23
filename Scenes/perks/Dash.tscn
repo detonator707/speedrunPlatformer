@@ -159,7 +159,7 @@ label_settings = SubResource("LabelSettings_v3yb0")
 position = Vector2(187, 192)
 scale = Vector2(8.21875, 7.6875)
 sprite_frames = SubResource("SpriteFrames_n8if4")
-frame_progress = 0.8287383
+frame_progress = 0.22320916
 
 [node name="Button" type="Button" parent="." unique_id=2031180811]
 offset_left = 130.0

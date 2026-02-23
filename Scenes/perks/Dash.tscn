@@ -1,5 +1,6 @@
-[gd_scene format=3 uid="uid://ch0tw0yvpc0o7"]
+[gd_scene format=3 uid="uid://c4t8ub3au7a7j"]
 
+[ext_resource type="Script" uid="uid://ce8qdckw56ua3" path="res://Scenes/perks/dash.gd" id="1_hrtfk"]
 [ext_resource type="Texture2D" uid="uid://cjak0a0ggvvn" path="res://sprites/items/Perks/Perks/dash1.png" id="1_wa1c8"]
 [ext_resource type="Texture2D" uid="uid://dmskhlws2g3pd" path="res://sprites/items/Perks/Perks/dash2.png" id="2_hrtfk"]
 [ext_resource type="Texture2D" uid="uid://dfn5xw0asixq7" path="res://sprites/items/Perks/Perks/dash3.png" id="3_0coni"]
@@ -138,6 +139,8 @@ animations = [{
 }]
 
 [node name="Dash" type="Node2D" unique_id=639956855]
+process_mode = 3
+script = ExtResource("1_hrtfk")
 
 [node name="Panel" type="Panel" parent="." unique_id=1543282046]
 offset_right = 363.0

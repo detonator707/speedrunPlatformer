@@ -28,7 +28,7 @@
 [ext_resource type="Texture2D" uid="uid://ssskchpt4x8" path="res://sprites/characters/Pibble/sprite_run03.png" id="26_fnkle"]
 [ext_resource type="Texture2D" uid="uid://c4b2fofa17w1w" path="res://sprites/characters/Pibble/sprite_run04.png" id="27_wr3wg"]
 [ext_resource type="Texture2D" uid="uid://e1yq7o8afw5y" path="res://sprites/characters/Pibble/sprite_run05.png" id="28_6xvgv"]
-[ext_resource type="Script" uid="uid://b5g12lg2g3ay3" path="res://Scenes/winzone.gd" id="30_8m3t6"]
+[ext_resource type="Script" path="res://Scenes/winzone.gd" id="30_8m3t6"]
 [ext_resource type="Script" uid="uid://h3d3jq12831p" path="res://scripts/game/killzone.gd" id="30_mucmn"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_wrm1d"]

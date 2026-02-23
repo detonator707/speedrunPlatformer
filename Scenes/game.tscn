@@ -2566,6 +2566,7 @@ animation = &"jump"
 shape = SubResource("CapsuleShape2D_3dryh")
 
 [node name="Camera2D" type="Camera2D" parent="Character" unique_id=1060664000]
+unique_name_in_owner = true
 zoom = Vector2(1.5, 1.5)
 
 [node name="UI" type="CanvasLayer" parent="Character/Camera2D" unique_id=2001274953]

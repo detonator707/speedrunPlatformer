@@ -2545,10 +2545,12 @@ distance = -177.0
 normal = Vector2(-1, 0)
 
 [node name="Game" type="Node" unique_id=1747537082]
+process_mode = 3
 script = ExtResource("1_cwurv")
 
 [node name="Character" type="CharacterBody2D" parent="." unique_id=1683185460]
 unique_name_in_owner = true
+process_mode = 1
 position = Vector2(0, -34)
 collision_layer = 65535
 collision_mask = 65535

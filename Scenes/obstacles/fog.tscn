@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://md06h0pmuyvf"]
+
+[ext_resource type="Texture2D" uid="uid://ij3osxbsyl3f" path="res://sprites/temp/plainFog.jpg" id="1_0d0fy"]
+
+[node name="Node2D" type="Sprite2D" unique_id=671584790]
+modulate = Color(1, 1, 1, 0.50980395)
+z_index = 20
+position = Vector2(2, 2)
+scale = Vector2(2.517094, 2.534091)
+texture = ExtResource("1_0d0fy")

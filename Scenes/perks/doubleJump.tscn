@@ -82,3 +82,5 @@ offset_top = 331.0
 offset_right = 252.0
 offset_bottom = 366.0
 text = "+1 Please"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

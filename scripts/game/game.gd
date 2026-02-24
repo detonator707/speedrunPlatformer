@@ -7,12 +7,16 @@ extends Node
 @onready var perkList: Array[PackedScene] = [doubleJump, dash]
 
 #obstacles
-@onready var
+@onready var fog = load("res://Scenes/obstacles/fog.tscn")
+
+@onready var obstacleList: Array[PackedScene] = [fog]
 var roundOver: bool = false: 
 	set(value):
 		roundOver = value
 		if(roundOver == true):
-			
+			var location = randi() % obstacleList.size()
+			var insta = obstacleList[location].instantiate()
+			%Camera2D.add_child(insta)
 	get():
 		return roundOver
 
@@ -21,6 +25,7 @@ func getRound():
 	return roundOver
 
 func _ready() -> void:
+	roundOver = true
 	perkList.shuffle()
 	
 	var insta = perkList[0].instantiate()

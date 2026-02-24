@@ -16,7 +16,7 @@ var roundOver: bool = false:
 		if(roundOver == true):
 			var location = randi() % obstacleList.size()
 			var insta = obstacleList[location].instantiate()
-			%Camera2D.add_child(insta)
+			#%Camera2D.add_child(insta)
 	get():
 		return roundOver
 

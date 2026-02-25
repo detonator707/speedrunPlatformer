@@ -4,7 +4,6 @@
 [ext_resource type="Script" uid="uid://mow5d12vyrsb" path="res://scripts/game/game.gd" id="1_cwurv"]
 [ext_resource type="Texture2D" uid="uid://b7t68qqoyi416" path="res://sprites/temp/brownSquare.png" id="2_qxrlw"]
 [ext_resource type="Texture2D" uid="uid://c5vud0rflfl2a" path="res://sprites/characters/Pibble/pixil-frame-0.png" id="2_wrm1d"]
-[ext_resource type="Texture2D" uid="uid://brfoxrdhq1x3h" path="res://sprites/characters/Pibble/sprite_idle0.png" id="3_cwurv"]
 [ext_resource type="Texture2D" uid="uid://3uufqi15e74f" path="res://sprites/characters/Pibble/sprite_idle2.png" id="4_mucmn"]
 [ext_resource type="Texture2D" uid="uid://y2epe8bjuuy2" path="res://sprites/characters/Pibble/sprite_idle1.png" id="5_8m3t6"]
 [ext_resource type="Texture2D" uid="uid://dcvj2lcaf0cpm" path="res://sprites/characters/Pibble/sprite_idle3.png" id="6_ese38"]
@@ -29,7 +28,7 @@
 [ext_resource type="Texture2D" uid="uid://c4b2fofa17w1w" path="res://sprites/characters/Pibble/sprite_run04.png" id="27_wr3wg"]
 [ext_resource type="Texture2D" uid="uid://e1yq7o8afw5y" path="res://sprites/characters/Pibble/sprite_run05.png" id="28_6xvgv"]
 [ext_resource type="Texture2D" uid="uid://blks7b0guejhu" path="res://sprites/map/Ground.png" id="29_8m3t6"]
-[ext_resource type="Script" path="res://scripts/game/winzone.gd" id="30_8m3t6"]
+[ext_resource type="Script" uid="uid://b5g12lg2g3ay3" path="res://scripts/game/winzone.gd" id="30_8m3t6"]
 [ext_resource type="Texture2D" uid="uid://bsi6davttje6w" path="res://sprites/map/Finish.png" id="30_ese38"]
 [ext_resource type="Script" uid="uid://h3d3jq12831p" path="res://scripts/game/killzone.gd" id="30_mucmn"]
 [ext_resource type="Texture2D" uid="uid://dy0l6xl26a3jj" path="res://sprites/map/foreground/pixil-frame-2.png" id="33_bwj6o"]
@@ -58,9 +57,6 @@ animations = [{
 "texture": ExtResource("4_mucmn")
 }, {
 "duration": 1.0,
-"texture": ExtResource("3_cwurv")
-}, {
-"duration": 1.0,
 "texture": ExtResource("5_8m3t6")
 }, {
 "duration": 1.0,
@@ -68,7 +64,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"idle",
-"speed": 4.0
+"speed": 3.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -2593,10 +2589,11 @@ collision_mask = 65535
 script = ExtResource("1_5vujo")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Character" unique_id=1828263339]
-position = Vector2(7, -4)
-scale = Vector2(0.7062305, 0.769414)
+position = Vector2(7.033627, -4.836116)
+scale = Vector2(0.69932854, 0.72327757)
 sprite_frames = SubResource("SpriteFrames_wrm1d")
-animation = &"jump"
+animation = &"idle"
+frame_progress = 0.6480558
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Character" unique_id=534402684]
 shape = SubResource("CapsuleShape2D_3dryh")

@@ -2669,45 +2669,47 @@ script = ExtResource("30_8m3t6")
 position = Vector2(307, -5)
 shape = SubResource("WorldBoundaryShape2D_mucmn")
 
-[node name="PixilFrame2" type="Sprite2D" parent="." unique_id=1934511777]
-position = Vector2(-1142, 2)
-texture = ExtResource("33_bwj6o")
+[node name="flowers and whatnot" type="Node" parent="." unique_id=1598984130]
 
-[node name="PixilFrame7" type="Sprite2D" parent="." unique_id=1808158760]
-position = Vector2(-959, -32)
-texture = ExtResource("34_f3c8l")
-
-[node name="PixilFrame5" type="Sprite2D" parent="." unique_id=1618683637]
-position = Vector2(-679, -32)
-texture = ExtResource("35_bu0y5")
-
-[node name="PixilFrame0" type="Sprite2D" parent="." unique_id=1660961542]
+[node name="PixilFrame0" type="Sprite2D" parent="flowers and whatnot" unique_id=1660961542]
 position = Vector2(173, 2)
 texture = ExtResource("36_6a4tp")
 
-[node name="PixilFrame1" type="Sprite2D" parent="." unique_id=1398807319]
-position = Vector2(-65, 2)
-texture = ExtResource("37_631el")
-
-[node name="PixilFrame3" type="Sprite2D" parent="." unique_id=961000280]
-position = Vector2(-249, 2)
-texture = ExtResource("38_vs120")
-
-[node name="PixilFrame4" type="Sprite2D" parent="." unique_id=1534279269]
-position = Vector2(-264, 2)
-texture = ExtResource("38_vs120")
-
-[node name="PixilFrame6" type="Sprite2D" parent="." unique_id=1996930095]
+[node name="PixilFrame6" type="Sprite2D" parent="flowers and whatnot" unique_id=1996930095]
 position = Vector2(-458, -32)
 texture = ExtResource("39_v2cs8")
 
-[node name="PixilFrame8" type="Sprite2D" parent="." unique_id=810500371]
+[node name="Rock" type="Sprite2D" parent="flowers and whatnot" unique_id=900496883]
+position = Vector2(-1647, -3)
+texture = ExtResource("41_f3c8l")
+
+[node name="PixilFrame8" type="Sprite2D" parent="flowers and whatnot" unique_id=810500371]
 position = Vector2(-1391, -32)
 texture = ExtResource("40_32sfa")
 
-[node name="Rock" type="Sprite2D" parent="." unique_id=900496883]
-position = Vector2(-1647, -3)
-texture = ExtResource("41_f3c8l")
+[node name="PixilFrame4" type="Sprite2D" parent="flowers and whatnot" unique_id=1534279269]
+position = Vector2(-264, 2)
+texture = ExtResource("38_vs120")
+
+[node name="PixilFrame3" type="Sprite2D" parent="flowers and whatnot" unique_id=961000280]
+position = Vector2(-249, 2)
+texture = ExtResource("38_vs120")
+
+[node name="PixilFrame1" type="Sprite2D" parent="flowers and whatnot" unique_id=1398807319]
+position = Vector2(-65, 2)
+texture = ExtResource("37_631el")
+
+[node name="PixilFrame5" type="Sprite2D" parent="flowers and whatnot" unique_id=1618683637]
+position = Vector2(-679, -32)
+texture = ExtResource("35_bu0y5")
+
+[node name="PixilFrame7" type="Sprite2D" parent="flowers and whatnot" unique_id=1808158760]
+position = Vector2(-959, -32)
+texture = ExtResource("34_f3c8l")
+
+[node name="PixilFrame2" type="Sprite2D" parent="flowers and whatnot" unique_id=1934511777]
+position = Vector2(-1142, 2)
+texture = ExtResource("33_bwj6o")
 
 [connection signal="animation_finished" from="Character/AnimatedSprite2D" to="Character" method="_on_animated_sprite_2d_animation_finished"]
 [connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]

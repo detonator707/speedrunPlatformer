@@ -25,7 +25,6 @@ func getRound():
 	return roundOver
 
 func _ready() -> void:
-	roundOver = true
 	perkList.shuffle()
 	
 	var insta = perkList[0].instantiate()

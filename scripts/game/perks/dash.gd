@@ -12,5 +12,6 @@ func _ready() -> void:
 func _on_button_pressed() -> void:
 	character.enable_dash()
 	character.back_to_start()
+	get_node("/root/Game").roundOver = true
 	perkList.visible = false
 	get_tree().paused = false

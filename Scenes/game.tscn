@@ -2594,7 +2594,8 @@ shape = SubResource("CapsuleShape2D_3dryh")
 [node name="Camera2D" type="Camera2D" parent="Character" unique_id=1060664000]
 unique_name_in_owner = true
 position = Vector2(56, 0)
-zoom = Vector2(5, 5)
+offset = Vector2(0, -50)
+zoom = Vector2(2, 2)
 
 [node name="UI" type="CanvasLayer" parent="Character/Camera2D" unique_id=2001274953]
 unique_name_in_owner = true

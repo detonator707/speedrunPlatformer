@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://md06h0pmuyvf"]
 
 [ext_resource type="Shader" uid="uid://dk8alcjg6s1ww" path="res://scripts/game/obstacles/fog.gdshader" id="1_0d0fy"]
+[ext_resource type="Script" uid="uid://hp0udijdhl6g" path="res://scripts/game/obstacles/color_rect.gd" id="2_78h6q"]
 
 [sub_resource type="FastNoiseLite" id="FastNoiseLite_0d0fy"]
 frequency = 0.0075
@@ -30,3 +31,4 @@ offset_left = -222.87607
 offset_top = -131.80269
 offset_right = 242.74026
 offset_bottom = 131.01344
+script = ExtResource("2_78h6q")

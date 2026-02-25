@@ -5,14 +5,25 @@ extends CharacterBody2D
 var prevAnimation = ""
 const SPEED = 300.0
 const JUMP_VELOCITY = -400.0
+@export var has_dash := false
+@export var extra_dashes := 0
 @export var has_double_jump := false
-@export var extra_jumps := 2
+@export var extra_jumps := 0
 var jumps_left := 0
 
 func enable_double_jump(amount := 1) -> void:
 	has_double_jump = true
 	extra_jumps += amount
 	jumps_left = extra_jumps
+	
+func enable_dash(amount := 1)-> void:
+	has_dash = true
+	extra_dashes += amount
+	
+	
+
+func back_to_start() -> void:
+	global_transform.origin = Vector2(-1224.0,-40.0)
 
 
 func _physics_process(delta: float) -> void:
@@ -32,11 +43,12 @@ func _physics_process(delta: float) -> void:
 			jumps_left -= 1
 			
 	if Input.is_action_just_pressed("dash"):
-		if direction < 0:
-			direction = -20
-		elif direction > 0:
-			direction = 20
-		move_and_slide()
+		if has_dash:
+			if direction < 0:
+				direction = -20
+			elif direction > 0:
+				direction = 20
+			move_and_slide()
 
 
 	if not is_on_floor():

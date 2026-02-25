@@ -1,4 +1,4 @@
-[gd_scene format=3 uid="uid://c4t8ub3au7a7j"]
+[gd_scene format=3 uid="uid://ch0tw0yvpc0o7"]
 
 [ext_resource type="Script" uid="uid://ce8qdckw56ua3" path="res://scripts/game/perks/dash.gd" id="1_hrtfk"]
 [ext_resource type="Texture2D" uid="uid://cjak0a0ggvvn" path="res://sprites/items/Perks/Perks/dash1.png" id="1_wa1c8"]
@@ -31,7 +31,6 @@
 [ext_resource type="Texture2D" uid="uid://dwl1ek4qkcspa" path="res://sprites/items/Perks/Perks/dash28.png" id="28_yshr5"]
 [ext_resource type="Texture2D" uid="uid://gsr7cc2fwuh" path="res://sprites/items/Perks/Perks/dash29.png" id="29_ssemd"]
 [ext_resource type="Texture2D" uid="uid://1tslgub7s14j" path="res://sprites/items/Perks/Perks/dash30.png" id="30_x1km8"]
-
 
 [sub_resource type="SystemFont" id="SystemFont_kongj"]
 font_names = PackedStringArray("Castellar")
@@ -168,3 +167,5 @@ offset_top = 331.0
 offset_right = 252.0
 offset_bottom = 366.0
 text = "+1 Please"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

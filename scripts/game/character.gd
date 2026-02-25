@@ -13,6 +13,10 @@ func enable_double_jump(amount := 1) -> void:
 	has_double_jump = true
 	extra_jumps += amount
 	jumps_left = extra_jumps
+	
+
+func back_to_start() -> void:
+	global_transform.origin = Vector2(-1224.0,-40.0)
 
 
 func _physics_process(delta: float) -> void:

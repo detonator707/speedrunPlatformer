@@ -29,7 +29,7 @@
 [ext_resource type="Texture2D" uid="uid://c4b2fofa17w1w" path="res://sprites/characters/Pibble/sprite_run04.png" id="27_wr3wg"]
 [ext_resource type="Texture2D" uid="uid://e1yq7o8afw5y" path="res://sprites/characters/Pibble/sprite_run05.png" id="28_6xvgv"]
 [ext_resource type="Texture2D" uid="uid://blks7b0guejhu" path="res://sprites/map/Ground.png" id="29_8m3t6"]
-[ext_resource type="Script" path="res://scripts/game/winzone.gd" id="30_8m3t6"]
+[ext_resource type="Script" uid="uid://b5g12lg2g3ay3" path="res://scripts/game/winzone.gd" id="30_8m3t6"]
 [ext_resource type="Texture2D" uid="uid://bsi6davttje6w" path="res://sprites/map/Finish.png" id="30_ese38"]
 [ext_resource type="Script" uid="uid://h3d3jq12831p" path="res://scripts/game/killzone.gd" id="30_mucmn"]
 [ext_resource type="Texture2D" uid="uid://dy0l6xl26a3jj" path="res://sprites/map/foreground/pixil-frame-2.png" id="33_bwj6o"]
@@ -2641,10 +2641,10 @@ layout_mode = 2
 
 [node name="Label" type="Label" parent="Character/Camera2D/UI" unique_id=1186629055]
 unique_name_in_owner = true
-offset_left = -1427.0
-offset_top = -239.0
-offset_right = -1076.0
-offset_bottom = 83.0
+offset_left = 145.0
+offset_top = 98.0
+offset_right = 960.0
+offset_bottom = 530.0
 
 [node name="Timer" type="Timer" parent="Character/Camera2D/UI/Label" unique_id=1987700567]
 script = ExtResource("27_bu0y5")
@@ -2723,6 +2723,6 @@ position = Vector2(-1142, 2)
 texture = ExtResource("33_bwj6o")
 
 [connection signal="animation_finished" from="Character/AnimatedSprite2D" to="Character" method="_on_animated_sprite_2d_animation_finished"]
-[connection signal="timeout" from="Character/Camera2D/UI/Label/Timer" to="Character/Camera2D/UI/Label/Timer" method="on_timer_timeout"]
+[connection signal="timeout" from="Character/Camera2D/UI/Label/Timer" to="Character/Camera2D/UI/Label/Timer" method="_on_timer_timeout"]
 [connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]
 [connection signal="body_entered" from="Area2D2" to="Area2D2" method="_on_body_entered"]

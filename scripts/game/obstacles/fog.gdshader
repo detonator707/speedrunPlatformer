@@ -8,14 +8,15 @@ uniform float density: hint_range(0.0, 1.0) = .25;
 uniform vec2 speed = vec2(.02, .01);
 //time for pausing
 uniform float shader_time = 0.0;
-uniform float variable = 2.8;
+uniform float nVariable = 2.8;
+uniform float dVariable = .8;
 
 void fragment(){
 	vec2 uv = UV + speed * shader_time;
 	//Sample the noise texture
-	float noise = texture(noise_texture, uv).r * variable;
+	float noise = texture(noise_texture, uv).r * nVariable;
 	//
 	float fog = clamp(noise * 2.0 - 1.0, 0.0,1.0);
 	//apply the fog effect
-	COLOR.a *= fog * density * 1.0;
+	COLOR.a *= fog * density * dVariable;
 }

@@ -13,9 +13,9 @@ func _ready() -> void:
 
 func _on_timer_timeout() -> void:
 	timeInSeconds += 1
-	print("TIMEOUT FIRED ", timeInSeconds)
+	#print("TIMEOUT FIRED ", timeInSeconds)
 	var minutes = timeInSeconds / 60
 	var seconds = timeInSeconds % 60
 	
 	label.text = "%02d:%02d" % [minutes, seconds]
-	print("Label text set to", label.text)
+	#print("Label text set to", label.text)

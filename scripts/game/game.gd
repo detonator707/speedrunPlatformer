@@ -10,13 +10,23 @@ extends Node
 @onready var fog = load("res://Scenes/obstacles/fog.tscn")
 
 @onready var obstacleList: Array[PackedScene] = [fog]
+@onready var usedList: Array[PackedScene] = []
 var roundOver: bool = false: 
 	set(value):
 		roundOver = value
 		if(roundOver == true):
 			var location = randi() % obstacleList.size()
 			var insta = obstacleList[location].instantiate()
-			%Camera2D.add_child(insta)
+			if usedList.has(obstacleList[location]):
+				#print("list has it")
+				if(obstacleList[location] == fog):
+					#print("BALLSSSSS")
+					var child_node = $%Camera2D/fog
+					child_node.get_child(0).oneMore()
+			else:
+				#print("making a new one")
+				%Camera2D.add_child(insta)
+				usedList.append(obstacleList[location])
 	get():
 		return roundOver
 

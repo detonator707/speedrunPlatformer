@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cej061uqdolt5"
-path="res://.godot/imported/PitTrap.png-28e6a67732a0260f48ca24f20d1b06ec.ctex"
+uid="uid://b72uf2tsto17p"
+path="res://.godot/imported/Bee.png-c05ec4c7473d2b2a392881b00d8d6f44.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/map/PitTrap.png"
-dest_files=["res://.godot/imported/PitTrap.png-28e6a67732a0260f48ca24f20d1b06ec.ctex"]
+source_file="res://sprites/obstacles/Bee.png"
+dest_files=["res://.godot/imported/Bee.png-c05ec4c7473d2b2a392881b00d8d6f44.ctex"]
 
 [params]
 

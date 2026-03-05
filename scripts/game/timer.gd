@@ -1,12 +1,11 @@
 extends Timer
 
 @onready var label: Label = %Label
-@onready var UI = get_node("/root/Game/Character/Camera2D/UI")
 
 var timeInSeconds: int = 0
 
 func _ready() -> void:
-	UI.visible = true
+	%Label.visible = true
 	timeout.connect(_on_timer_timeout) 
 	print("Timer _ready() called – connecting signal and starting...")
 	start()

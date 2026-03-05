@@ -1,0 +1,83 @@
+[gd_scene format=3 uid="uid://bkd37eokpds5m"]
+
+[ext_resource type="Texture2D" uid="uid://q370fw187whh" path="res://sprites/characters/SiscoCharacter/SiscoPeguinSprite1.png" id="1_cf0dl"]
+[ext_resource type="Texture2D" uid="uid://bxnm2u77ghba3" path="res://sprites/characters/SiscoCharacter/SiscoPeguinSprite2.png" id="2_r3m3h"]
+[ext_resource type="Texture2D" uid="uid://bjnxnuvgu671h" path="res://sprites/characters/SiscoCharacter/SiscoPeguinSprite3.png" id="3_x2j3j"]
+[ext_resource type="Texture2D" uid="uid://bhpku4jkpm4m6" path="res://sprites/characters/SiscoCharacter/SiscoPeguinSprite4.png" id="4_j0bay"]
+[ext_resource type="Texture2D" uid="uid://dxl3k46fl0jx6" path="res://sprites/characters/SiscoCharacter/SiscoPeguinSprite5.png" id="5_rgss6"]
+[ext_resource type="Texture2D" uid="uid://dle4s2wjd3dy0" path="res://sprites/characters/SiscoCharacter/SiscoPeguinSprite7.png" id="6_o48kv"]
+[ext_resource type="Texture2D" uid="uid://hl5k8x6vty8d" path="res://sprites/characters/SiscoCharacter/SiscoPeguinSprite6.png" id="7_we2c8"]
+[ext_resource type="Texture2D" uid="uid://dfmagkslokf7p" path="res://sprites/characters/SiscoCharacter/SiscoPeguinSprite8.png" id="8_5d4r4"]
+[ext_resource type="Texture2D" uid="uid://djgxci3v6qaqp" path="res://sprites/characters/SiscoCharacter/SiscoPeguinSprite10.png" id="9_aq3d7"]
+[ext_resource type="Texture2D" uid="uid://36q3yy41er3y" path="res://sprites/characters/SiscoCharacter/SiscoPeguinSprite9.png" id="10_k8w57"]
+[ext_resource type="Texture2D" uid="uid://fge3orrlv3xt" path="res://sprites/characters/SiscoCharacter/SiscoPeguinSprite11.png" id="11_a7guf"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_e7l3c"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_cf0dl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_r3m3h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_x2j3j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_j0bay")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_rgss6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_o48kv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_we2c8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_5d4r4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_aq3d7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_k8w57")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_a7guf")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Node2D" type="Node2D" unique_id=1740894941]
+
+[node name="Panel" type="Panel" parent="." unique_id=270976415]
+offset_right = 478.0
+offset_bottom = 644.0
+
+[node name="Label" type="Label" parent="Panel" unique_id=1302457195]
+layout_mode = 0
+offset_left = 150.0
+offset_top = 52.0
+offset_right = 318.0
+offset_bottom = 129.0
+theme_override_font_sizes/font_size = 46
+text = "Frankie"
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Panel" unique_id=1763778713]
+position = Vector2(229, 267.99997)
+scale = Vector2(8.1, 7.75)
+sprite_frames = SubResource("SpriteFrames_e7l3c")
+frame_progress = 0.1573494
+
+[node name="Button" type="Button" parent="." unique_id=62223026]
+offset_left = 148.0
+offset_top = 460.0
+offset_right = 331.0
+offset_bottom = 543.0
+theme_override_font_sizes/font_size = 25
+text = "Good Choice"

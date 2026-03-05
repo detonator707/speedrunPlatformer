@@ -1,0 +1,104 @@
+[gd_scene format=3 uid="uid://c8e1cuiusl57m"]
+
+[ext_resource type="Texture2D" uid="uid://bfouicpj14bla" path="res://sprites/characters/MushGuySprites_anim/LilMushDude/lilMushFella-Recovered1.png" id="1_6kgb3"]
+[ext_resource type="Texture2D" uid="uid://bda53oojcx1ks" path="res://sprites/characters/MushGuySprites_anim/LilMushDude/lilMushFella-Recovered2.png" id="2_rqgsj"]
+[ext_resource type="Texture2D" uid="uid://csyuek6r8unbm" path="res://sprites/characters/MushGuySprites_anim/LilMushDude/lilMushFella-Recovered3.png" id="3_g5vaf"]
+[ext_resource type="Texture2D" uid="uid://cut1jmphigasn" path="res://sprites/characters/MushGuySprites_anim/LilMushDude/lilMushFella-Recovered4.png" id="4_dkewv"]
+[ext_resource type="Texture2D" uid="uid://bs53l2yrtxg52" path="res://sprites/characters/MushGuySprites_anim/LilMushDude/lilMushFella-Recovered5.png" id="5_few5e"]
+[ext_resource type="Texture2D" uid="uid://c164yn3nmspfs" path="res://sprites/characters/MushGuySprites_anim/LilMushDude/lilMushFella-Recovered6.png" id="6_vkidg"]
+[ext_resource type="Texture2D" uid="uid://nj8gnbjfwdwy" path="res://sprites/characters/MushGuySprites_anim/LilMushDude/lilMushFella-Recovered7.png" id="7_rn7mw"]
+[ext_resource type="Texture2D" uid="uid://c0lemsisulrr7" path="res://sprites/characters/MushGuySprites_anim/LilMushDude/lilMushFella-Recovered8.png" id="8_m8tq3"]
+[ext_resource type="Texture2D" uid="uid://crnv6ekwxn2xy" path="res://sprites/characters/MushGuySprites_anim/LilMushDude/lilMushFella-Recovered9.png" id="9_3gq21"]
+[ext_resource type="Texture2D" uid="uid://dia3pvswm1pfq" path="res://sprites/characters/MushGuySprites_anim/LilMushDude/lilMushFella-Recovered10.png" id="10_bypjx"]
+[ext_resource type="Texture2D" uid="uid://ds31n21qjm62a" path="res://sprites/characters/MushGuySprites_anim/LilMushDude/lilMushFella-Recovered11.png" id="11_bw012"]
+[ext_resource type="Texture2D" uid="uid://p3tqpe0xvdqp" path="res://sprites/characters/MushGuySprites_anim/LilMushDude/lilMushFella-Recovered12.png" id="12_8ips4"]
+[ext_resource type="Texture2D" uid="uid://356ch733y77s" path="res://sprites/characters/MushGuySprites_anim/LilMushDude/lilMushFella-Recovered13.png" id="13_7y5x4"]
+[ext_resource type="Texture2D" uid="uid://bwdabsh41gy47" path="res://sprites/characters/MushGuySprites_anim/LilMushDude/lilMushFella-Recovered14.png" id="14_gyow3"]
+[ext_resource type="Texture2D" uid="uid://duxj50sw280y3" path="res://sprites/characters/MushGuySprites_anim/LilMushDude/lilMushFella-Recovered15.png" id="15_jenh5"]
+[ext_resource type="Texture2D" uid="uid://w7kk4rggg1jj" path="res://sprites/characters/MushGuySprites_anim/LilMushDude/lilMushFella-Recovered16.png" id="16_dab3e"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_2m6td"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_6kgb3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_rqgsj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_g5vaf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_dkewv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_few5e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_vkidg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_rn7mw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_m8tq3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_3gq21")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_bypjx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_bw012")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_8ips4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_7y5x4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_gyow3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_jenh5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_dab3e")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Node2D" type="Node2D" unique_id=183024860]
+
+[node name="Panel" type="Panel" parent="." unique_id=157936091]
+offset_right = 502.0
+offset_bottom = 643.0
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Panel" unique_id=604052234]
+position = Vector2(244.00002, 273)
+scale = Vector2(7.3437495, 6.78125)
+sprite_frames = SubResource("SpriteFrames_2m6td")
+frame_progress = 0.9100572
+speed_scale = 1.5
+
+[node name="Label" type="Label" parent="Panel" unique_id=939253641]
+layout_mode = 0
+offset_left = 152.0
+offset_top = 82.0
+offset_right = 331.0
+offset_bottom = 128.0
+theme_override_font_sizes/font_size = 32
+text = "Spore Dude"
+
+[node name="Button" type="Button" parent="." unique_id=957061699]
+offset_left = 193.0
+offset_top = 495.0
+offset_right = 302.0
+offset_bottom = 556.0
+theme_override_font_sizes/font_size = 38
+text = "..."

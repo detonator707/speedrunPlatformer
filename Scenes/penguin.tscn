@@ -8,16 +8,21 @@ offset_bottom = 644.0
 
 [node name="Label" type="Label" parent="Panel" unique_id=1302457195]
 layout_mode = 0
-offset_left = 86.0
-offset_top = 30.0
-offset_right = 408.0
-offset_bottom = 125.0
+offset_left = 150.0
+offset_top = 52.0
+offset_right = 318.0
+offset_bottom = 129.0
+theme_override_font_sizes/font_size = 46
+text = "Frankie"
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Panel" unique_id=1748580731]
+position = Vector2(228, 277)
 
 [node name="Button" type="Button" parent="Panel" unique_id=62223026]
 layout_mode = 0
-offset_left = 140.0
+offset_left = 148.0
 offset_top = 460.0
-offset_right = 323.0
+offset_right = 331.0
 offset_bottom = 543.0
+theme_override_font_sizes/font_size = 25
+text = "Good Choice"

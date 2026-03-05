@@ -19,4 +19,4 @@ func _on_timer_timeout() -> void:
 	var seconds = timeInSeconds % 60
 	
 	label.text = "%02d:%02d" % [minutes, seconds]
-	print("Labe text set to", label.text)
+	print("Label text set to", label.text)

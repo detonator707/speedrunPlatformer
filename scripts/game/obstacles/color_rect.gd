@@ -16,4 +16,4 @@ func oneMore() -> void:
 	var v: float = float(mat.get_shader_parameter("nVariable"))
 	var d: float = float(mat.get_shader_parameter("dVariable"))
 	mat.set_shader_parameter("nVariable", v + 0.1)
-	mat.set_shader_parameter("dVariable", d + .1)
+	mat.set_shader_parameter("dVariable", d + .05)

@@ -56,28 +56,28 @@ animations = [{
 [node name="penguin" type="Node2D" unique_id=1740894941]
 
 [node name="Panel" type="Panel" parent="." unique_id=270976415]
-offset_right = 478.0
+offset_right = 289.0
 offset_bottom = 644.0
 
 [node name="Label" type="Label" parent="Panel" unique_id=1302457195]
 layout_mode = 0
-offset_left = 150.0
-offset_top = 52.0
-offset_right = 318.0
-offset_bottom = 129.0
+offset_left = 56.0
+offset_top = 71.0
+offset_right = 224.0
+offset_bottom = 148.0
 theme_override_font_sizes/font_size = 46
 text = "Frankie"
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Panel" unique_id=1763778713]
-position = Vector2(229, 267.99997)
+position = Vector2(139, 277.99997)
 scale = Vector2(8.1, 7.75)
 sprite_frames = SubResource("SpriteFrames_e7l3c")
 frame_progress = 0.1573494
 
 [node name="Button" type="Button" parent="." unique_id=62223026]
-offset_left = 148.0
-offset_top = 460.0
-offset_right = 331.0
-offset_bottom = 543.0
+offset_left = 49.0
+offset_top = 470.0
+offset_right = 232.0
+offset_bottom = 553.0
 theme_override_font_sizes/font_size = 25
 text = "Good Choice"

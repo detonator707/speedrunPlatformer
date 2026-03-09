@@ -1,3 +1,83 @@
 [gd_scene format=3 uid="uid://bkrrsby2rttqg"]
 
+[ext_resource type="Texture2D" uid="uid://bcpjl0pibqmj4" path="res://sprites/characters/finn/Finn1.png" id="1_uiq3e"]
+[ext_resource type="Texture2D" uid="uid://cald2q7bubdg6" path="res://sprites/characters/finn/Finn2.png" id="2_krm8l"]
+[ext_resource type="Texture2D" uid="uid://bo43jspfcp1y4" path="res://sprites/characters/finn/Finn3.png" id="3_ss4oa"]
+[ext_resource type="Texture2D" uid="uid://cmosdgowflcco" path="res://sprites/characters/finn/Finn4.png" id="4_aay4g"]
+[ext_resource type="Texture2D" uid="uid://1b144wyfwhsf" path="res://sprites/characters/finn/Finn5.png" id="5_y4gu5"]
+[ext_resource type="Texture2D" uid="uid://cm78hvndbyxtw" path="res://sprites/characters/finn/Finn7.png" id="6_3fccy"]
+[ext_resource type="Texture2D" uid="uid://oh3dm5104pjr" path="res://sprites/characters/finn/Finn6.png" id="7_tcf1k"]
+[ext_resource type="Texture2D" uid="uid://7mfvg07uh8vl" path="res://sprites/characters/finn/Finn8.png" id="8_7dkxj"]
+[ext_resource type="Texture2D" uid="uid://demay1afbbktn" path="res://sprites/characters/finn/Finn10.png" id="9_ib40x"]
+[ext_resource type="Texture2D" uid="uid://ca3pnhf3wbirv" path="res://sprites/characters/finn/Finn11.png" id="10_111p8"]
+[ext_resource type="Texture2D" uid="uid://bnun6pcytde1h" path="res://sprites/characters/finn/Finn12.png" id="11_e62sb"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ioht5"]
+animations = [{
+"frames": [{
+"duration": 1.3,
+"texture": ExtResource("1_uiq3e")
+}, {
+"duration": 1.3,
+"texture": ExtResource("2_krm8l")
+}, {
+"duration": 1.3,
+"texture": ExtResource("3_ss4oa")
+}, {
+"duration": 1.3,
+"texture": ExtResource("4_aay4g")
+}, {
+"duration": 1.3,
+"texture": ExtResource("5_y4gu5")
+}, {
+"duration": 1.3,
+"texture": ExtResource("6_3fccy")
+}, {
+"duration": 1.3,
+"texture": ExtResource("7_tcf1k")
+}, {
+"duration": 1.3,
+"texture": ExtResource("8_7dkxj")
+}, {
+"duration": 1.3,
+"texture": ExtResource("9_ib40x")
+}, {
+"duration": 1.3,
+"texture": ExtResource("10_111p8")
+}, {
+"duration": 1.3,
+"texture": ExtResource("11_e62sb")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
 [node name="Dolphin" type="Node2D" unique_id=525180157]
+
+[node name="Panel" type="Panel" parent="." unique_id=1774413070]
+offset_right = 274.0
+offset_bottom = 655.0
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Panel" unique_id=1813129022]
+position = Vector2(133, 276)
+scale = Vector2(1.2433332, 1.1800001)
+sprite_frames = SubResource("SpriteFrames_ioht5")
+frame_progress = 0.42969814
+
+[node name="Label" type="Label" parent="Panel" unique_id=30390900]
+layout_mode = 0
+offset_left = 47.0
+offset_top = 68.0
+offset_right = 222.0
+offset_bottom = 131.0
+theme_override_font_sizes/font_size = 45
+text = "Bubbles"
+
+[node name="Button" type="Button" parent="." unique_id=729623369]
+offset_left = 28.0
+offset_top = 455.0
+offset_right = 240.0
+offset_bottom = 526.0
+theme_override_font_sizes/font_size = 45
+text = "ዕዐረየዘጎክ"

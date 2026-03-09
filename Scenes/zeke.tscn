@@ -24,28 +24,28 @@ animations = [{
 [node name="dog" type="Node2D" unique_id=1781240558]
 
 [node name="Panel" type="Panel" parent="." unique_id=176212603]
-offset_right = 533.0
+offset_right = 307.0
 offset_bottom = 652.0
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Panel" unique_id=1578326092]
-position = Vector2(305, 281)
-scale = Vector2(4.3568745, 5.1739655)
+position = Vector2(176, 279)
+scale = Vector2(4.238437, 5.1739655)
 sprite_frames = SubResource("SpriteFrames_l5avd")
 frame_progress = 0.9010457
 
 [node name="Label" type="Label" parent="Panel" unique_id=1823970281]
 layout_mode = 0
-offset_left = 194.0
-offset_top = 48.0
-offset_right = 317.0
-offset_bottom = 123.0
+offset_left = 82.0
+offset_top = 75.0
+offset_right = 205.0
+offset_bottom = 150.0
 theme_override_font_sizes/font_size = 50
 text = "Zeke"
 
 [node name="Button" type="Button" parent="." unique_id=749228270]
-offset_left = 182.0
-offset_top = 487.0
-offset_right = 334.0
-offset_bottom = 556.0
+offset_left = 56.0
+offset_top = 472.0
+offset_right = 208.0
+offset_bottom = 541.0
 theme_override_font_sizes/font_size = 32
 text = "Bark"

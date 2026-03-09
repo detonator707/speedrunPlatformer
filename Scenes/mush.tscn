@@ -76,29 +76,29 @@ animations = [{
 [node name="mush" type="Node2D" unique_id=183024860]
 
 [node name="Panel" type="Panel" parent="." unique_id=157936091]
-offset_right = 502.0
-offset_bottom = 643.0
+offset_right = 297.0
+offset_bottom = 645.0
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Panel" unique_id=604052234]
-position = Vector2(244.00002, 273)
-scale = Vector2(7.3437495, 6.78125)
+position = Vector2(151, 284)
+scale = Vector2(6.6562495, 6.78125)
 sprite_frames = SubResource("SpriteFrames_2m6td")
 frame_progress = 0.9100572
 speed_scale = 1.5
 
 [node name="Label" type="Label" parent="Panel" unique_id=939253641]
 layout_mode = 0
-offset_left = 152.0
-offset_top = 82.0
-offset_right = 331.0
-offset_bottom = 128.0
-theme_override_font_sizes/font_size = 32
+offset_left = 33.0
+offset_top = 76.0
+offset_right = 252.0
+offset_bottom = 130.0
+theme_override_font_sizes/font_size = 39
 text = "Spore Dude"
 
 [node name="Button" type="Button" parent="." unique_id=957061699]
-offset_left = 193.0
-offset_top = 495.0
-offset_right = 302.0
-offset_bottom = 556.0
+offset_left = 92.0
+offset_top = 458.0
+offset_right = 201.0
+offset_bottom = 519.0
 theme_override_font_sizes/font_size = 38
 text = "..."

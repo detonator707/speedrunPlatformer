@@ -2,14 +2,14 @@ extends Timer
 
 @onready var label: Label = %Label
 
+
 var timeInSeconds: int = 0
 
 func _ready() -> void:
 	%Label.visible = true
 	timeout.connect(_on_timer_timeout) 
-	print("Timer _ready() called – connecting signal and starting...")
-	start()
-	print("Timer started – wait time:", wait_time, " one_shot:", one_shot)                             
+	
+	
 
 func _on_timer_timeout() -> void:
 	timeInSeconds += 1
@@ -19,3 +19,8 @@ func _on_timer_timeout() -> void:
 	
 	label.text = "%02d:%02d" % [minutes, seconds]
 	#print("Label text set to", label.text)
+	
+func reset() -> void:
+	timeInSeconds = 0
+	label.text = "00:00"
+	start()

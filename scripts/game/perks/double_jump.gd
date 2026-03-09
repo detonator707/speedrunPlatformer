@@ -3,6 +3,7 @@ extends Node2D
 @onready var character = get_node("/root/Game/Character")
 @onready var panel = get_node("/root/Game/Character/Camera2D/UI/Panel")
 @onready var box = get_node("/root/Game/Character/Camera2D/UI/Panel/BoxContainer")
+@onready var timer = get_node("/root/Game/Character/Camera2D/UI/Label/Timer")
 
 
 
@@ -16,6 +17,7 @@ func _ready() -> void:
 func _on_button_pressed() -> void:
 	character.enable_double_jump()
 	character.back_to_start()
+	timer.reset()
 	get_node("/root/Game").roundOver = true
 	panel.visible = false
 	box.visible = false

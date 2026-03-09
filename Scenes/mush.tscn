@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://c8e1cuiusl57m"]
 
 [ext_resource type="Texture2D" uid="uid://bfouicpj14bla" path="res://sprites/characters/MushGuySprites_anim/LilMushDude/lilMushFella-Recovered1.png" id="1_6kgb3"]
+[ext_resource type="Script" uid="uid://dk4elxl4svc74" path="res://scripts/game/players/mush.gd" id="1_rqgsj"]
 [ext_resource type="Texture2D" uid="uid://bda53oojcx1ks" path="res://sprites/characters/MushGuySprites_anim/LilMushDude/lilMushFella-Recovered2.png" id="2_rqgsj"]
 [ext_resource type="Texture2D" uid="uid://csyuek6r8unbm" path="res://sprites/characters/MushGuySprites_anim/LilMushDude/lilMushFella-Recovered3.png" id="3_g5vaf"]
 [ext_resource type="Texture2D" uid="uid://cut1jmphigasn" path="res://sprites/characters/MushGuySprites_anim/LilMushDude/lilMushFella-Recovered4.png" id="4_dkewv"]
@@ -74,6 +75,7 @@ animations = [{
 }]
 
 [node name="mush" type="Node2D" unique_id=183024860]
+script = ExtResource("1_rqgsj")
 
 [node name="Panel" type="Panel" parent="." unique_id=157936091]
 offset_right = 297.0
@@ -83,7 +85,7 @@ offset_bottom = 645.0
 position = Vector2(151, 284)
 scale = Vector2(6.6562495, 6.78125)
 sprite_frames = SubResource("SpriteFrames_2m6td")
-frame_progress = 0.9100572
+frame_progress = 0.16116305
 speed_scale = 1.5
 
 [node name="Label" type="Label" parent="Panel" unique_id=939253641]
@@ -102,3 +104,5 @@ offset_right = 201.0
 offset_bottom = 519.0
 theme_override_font_sizes/font_size = 38
 text = "..."
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

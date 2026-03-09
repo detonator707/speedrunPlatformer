@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://bkd37eokpds5m"]
 
 [ext_resource type="Texture2D" uid="uid://q370fw187whh" path="res://sprites/characters/SiscoCharacter/SiscoPeguinSprite1.png" id="1_cf0dl"]
+[ext_resource type="Script" uid="uid://c5rc5p0x3p7wd" path="res://scripts/game/players/frankie.gd" id="1_r3m3h"]
 [ext_resource type="Texture2D" uid="uid://bxnm2u77ghba3" path="res://sprites/characters/SiscoCharacter/SiscoPeguinSprite2.png" id="2_r3m3h"]
 [ext_resource type="Texture2D" uid="uid://bjnxnuvgu671h" path="res://sprites/characters/SiscoCharacter/SiscoPeguinSprite3.png" id="3_x2j3j"]
 [ext_resource type="Texture2D" uid="uid://bhpku4jkpm4m6" path="res://sprites/characters/SiscoCharacter/SiscoPeguinSprite4.png" id="4_j0bay"]
@@ -54,6 +55,7 @@ animations = [{
 }]
 
 [node name="penguin" type="Node2D" unique_id=1740894941]
+script = ExtResource("1_r3m3h")
 
 [node name="Panel" type="Panel" parent="." unique_id=270976415]
 offset_right = 289.0
@@ -72,7 +74,7 @@ text = "Frankie"
 position = Vector2(139, 277.99997)
 scale = Vector2(8.1, 7.75)
 sprite_frames = SubResource("SpriteFrames_e7l3c")
-frame_progress = 0.1573494
+frame_progress = 0.044264372
 
 [node name="Button" type="Button" parent="." unique_id=62223026]
 offset_left = 49.0
@@ -81,3 +83,5 @@ offset_right = 232.0
 offset_bottom = 553.0
 theme_override_font_sizes/font_size = 25
 text = "Good Choice"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

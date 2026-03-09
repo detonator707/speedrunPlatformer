@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://bkrrsby2rttqg"]
 
+[ext_resource type="Script" uid="uid://b2sjehjl53tlx" path="res://scripts/game/players/finn.gd" id="1_krm8l"]
 [ext_resource type="Texture2D" uid="uid://bcpjl0pibqmj4" path="res://sprites/characters/finn/Finn1.png" id="1_uiq3e"]
 [ext_resource type="Texture2D" uid="uid://cald2q7bubdg6" path="res://sprites/characters/finn/Finn2.png" id="2_krm8l"]
 [ext_resource type="Texture2D" uid="uid://bo43jspfcp1y4" path="res://sprites/characters/finn/Finn3.png" id="3_ss4oa"]
@@ -54,6 +55,7 @@ animations = [{
 }]
 
 [node name="Dolphin" type="Node2D" unique_id=525180157]
+script = ExtResource("1_krm8l")
 
 [node name="Panel" type="Panel" parent="." unique_id=1774413070]
 offset_right = 274.0
@@ -63,7 +65,7 @@ offset_bottom = 655.0
 position = Vector2(133, 276)
 scale = Vector2(1.2433332, 1.1800001)
 sprite_frames = SubResource("SpriteFrames_ioht5")
-frame_progress = 0.42969814
+frame_progress = 0.8674379
 
 [node name="Label" type="Label" parent="Panel" unique_id=30390900]
 layout_mode = 0
@@ -81,3 +83,5 @@ offset_right = 240.0
 offset_bottom = 526.0
 theme_override_font_sizes/font_size = 45
 text = "ዕዐረየዘጎክ"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

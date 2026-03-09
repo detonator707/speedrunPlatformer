@@ -1,0 +1,51 @@
+[gd_scene format=3 uid="uid://b1m6h4ivjlqb0"]
+
+[ext_resource type="Texture2D" uid="uid://y2epe8bjuuy2" path="res://sprites/characters/Pibble/sprite_idle1.png" id="1_j85tk"]
+[ext_resource type="Texture2D" uid="uid://3uufqi15e74f" path="res://sprites/characters/Pibble/sprite_idle2.png" id="2_0nyue"]
+[ext_resource type="Texture2D" uid="uid://dcvj2lcaf0cpm" path="res://sprites/characters/Pibble/sprite_idle3.png" id="3_mqwcf"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_l5avd"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_j85tk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_0nyue")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_mqwcf")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="dog" type="Node2D" unique_id=1781240558]
+
+[node name="Panel" type="Panel" parent="." unique_id=176212603]
+offset_right = 533.0
+offset_bottom = 652.0
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Panel" unique_id=1578326092]
+position = Vector2(305, 281)
+scale = Vector2(4.3568745, 5.1739655)
+sprite_frames = SubResource("SpriteFrames_l5avd")
+frame_progress = 0.9010457
+
+[node name="Label" type="Label" parent="Panel" unique_id=1823970281]
+layout_mode = 0
+offset_left = 194.0
+offset_top = 48.0
+offset_right = 317.0
+offset_bottom = 123.0
+theme_override_font_sizes/font_size = 50
+text = "Zeke"
+
+[node name="Button" type="Button" parent="." unique_id=749228270]
+offset_left = 182.0
+offset_top = 487.0
+offset_right = 334.0
+offset_bottom = 556.0
+theme_override_font_sizes/font_size = 32
+text = "Bark"

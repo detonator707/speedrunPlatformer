@@ -73,7 +73,7 @@ animations = [{
 "speed": 5.0
 }]
 
-[node name="Node2D" type="Node2D" unique_id=183024860]
+[node name="mush" type="Node2D" unique_id=183024860]
 
 [node name="Panel" type="Panel" parent="." unique_id=157936091]
 offset_right = 502.0

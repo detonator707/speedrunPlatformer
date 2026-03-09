@@ -53,7 +53,7 @@ animations = [{
 "speed": 5.0
 }]
 
-[node name="Node2D" type="Node2D" unique_id=1740894941]
+[node name="penguin" type="Node2D" unique_id=1740894941]
 
 [node name="Panel" type="Panel" parent="." unique_id=270976415]
 offset_right = 478.0

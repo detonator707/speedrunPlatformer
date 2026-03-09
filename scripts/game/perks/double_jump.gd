@@ -21,6 +21,7 @@ func _on_button_pressed() -> void:
 	get_node("/root/Game").roundOver = true
 	panel.visible = false
 	box.visible = false
+	timer.paused = false
 	get_tree().paused = false
 	
 	

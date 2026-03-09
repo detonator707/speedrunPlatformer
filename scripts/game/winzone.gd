@@ -1,6 +1,7 @@
 extends Area2D
 @onready var panel = get_node("/root/Game/Character/Camera2D/UI/Panel")
 @onready var box = get_node("/root/Game/Character/Camera2D/UI/Panel/BoxContainer")
+@onready var timer = get_node("/root/Game/Character/Camera2D/UI/Label/Timer")
 
 
 # Called when the node enters the scene tree for the first time.
@@ -15,6 +16,7 @@ func _process(delta: float) -> void:
 
 func _on_body_entered(body: Node2D) -> void:
 	if body == %Character:
+		timer.paused = true
 		get_tree().paused = true
 		panel.visible = true
 		box.visible = true

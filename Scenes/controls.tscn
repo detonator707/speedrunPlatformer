@@ -1,0 +1,45 @@
+[gd_scene format=3 uid="uid://tsn5ldujwppm"]
+
+[ext_resource type="Script" uid="uid://b2nhfvndb0fg0" path="res://scripts/game/controls.gd" id="1_8qavf"]
+
+[node name="Node2D" type="Node2D" unique_id=695562853]
+script = ExtResource("1_8qavf")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1910138118]
+position = Vector2(579.5, 323)
+scale = Vector2(0.92227566, 0.77163464)
+
+[node name="Panel" type="Panel" parent="Sprite2D" unique_id=807320637]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -274.7793
+offset_top = -264.3738
+offset_right = 276.2207
+offset_bottom = 227.62619
+grow_horizontal = 0
+
+[node name="Label" type="Label" parent="Sprite2D/Panel" unique_id=1683111622]
+layout_mode = 0
+offset_left = 22.769808
+offset_top = 68.685394
+offset_right = 513.76984
+offset_bottom = 407.6854
+theme_override_colors/font_color = Color(0, 0.7114553, 0.34251806, 1)
+theme_override_font_sizes/font_size = 39
+text = "A = Left
+D = Right
+SPACE = Jump
+E = Dash
+L Arrow = Left
+R Arrow = Right"
+
+[node name="Button" type="Button" parent="." unique_id=122986072]
+offset_left = 1.0
+offset_top = 582.0
+offset_right = 138.0
+offset_bottom = 645.0
+theme_override_font_sizes/font_size = 32
+text = "Back"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

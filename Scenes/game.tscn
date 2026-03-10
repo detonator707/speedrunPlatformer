@@ -2709,6 +2709,8 @@ offset_left = 64.0
 offset_top = 71.0
 offset_right = 188.0
 offset_bottom = 128.0
+theme_override_colors/font_color = Color(0.06980982, 0.25664103, 1, 1)
+theme_override_font_sizes/font_size = 35
 
 [node name="Timer" type="Timer" parent="Character/Camera2D/UI/Label" unique_id=1987700567]
 script = ExtResource("27_bu0y5")

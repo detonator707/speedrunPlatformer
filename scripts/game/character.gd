@@ -20,7 +20,6 @@ func enable_dash(amount := 1)-> void:
 	has_dash = true
 	extra_dashes += amount
 	
-	
 
 func back_to_start() -> void:
 	global_transform.origin = Vector2(-1224.0,-40.0)

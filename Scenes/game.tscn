@@ -3,9 +3,12 @@
 [ext_resource type="Script" uid="uid://dd3wv5rn34glm" path="res://scripts/game/character.gd" id="1_5vujo"]
 [ext_resource type="Script" uid="uid://mow5d12vyrsb" path="res://scripts/game/game.gd" id="1_cwurv"]
 [ext_resource type="Texture2D" uid="uid://b7t68qqoyi416" path="res://sprites/temp/brownSquare.png" id="2_qxrlw"]
-[ext_resource type="Texture2D" uid="uid://c5vud0rflfl2a" path="res://sprites/characters/Pibble/pixil-frame-0.png" id="2_wrm1d"]
+[ext_resource type="Texture2D" uid="uid://cv1436ypeygnq" path="res://sprites/characters/SiscoCharacter/SiscoPeguinSprite12.png" id="3_l4kai"]
+[ext_resource type="Texture2D" uid="uid://lfbu3cvxxlu5" path="res://sprites/characters/SiscoCharacter/SiscoPeguinSprite13.png" id="4_kcoun"]
 [ext_resource type="Texture2D" uid="uid://3uufqi15e74f" path="res://sprites/characters/Pibble/sprite_idle2.png" id="4_mucmn"]
 [ext_resource type="Texture2D" uid="uid://y2epe8bjuuy2" path="res://sprites/characters/Pibble/sprite_idle1.png" id="5_8m3t6"]
+[ext_resource type="Texture2D" uid="uid://di2yljllx38c3" path="res://sprites/characters/SiscoCharacter/SiscoPeguinSprite14.png" id="5_jegl3"]
+[ext_resource type="Texture2D" uid="uid://cwotycuofpk1m" path="res://sprites/characters/SiscoCharacter/SiscoPeguinSprite15.png" id="6_csv17"]
 [ext_resource type="Texture2D" uid="uid://dcvj2lcaf0cpm" path="res://sprites/characters/Pibble/sprite_idle3.png" id="6_ese38"]
 [ext_resource type="Texture2D" uid="uid://dy1j0ii5or3t" path="res://sprites/characters/Pibble/sprite_jump02.png" id="9_d3cha"]
 [ext_resource type="Texture2D" uid="uid://55ccmgnf1bkh" path="res://sprites/characters/Pibble/sprite_jump03.png" id="10_i26dy"]
@@ -65,11 +68,20 @@
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("2_wrm1d")
+"texture": ExtResource("3_l4kai")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_kcoun")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_jegl3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_csv17")
 }],
 "loop": true,
-"name": &"frame0",
-"speed": 5.0
+"name": &"guinJump",
+"speed": 10.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -161,7 +173,7 @@ animations = [{
 "texture": ExtResource("29_sfx3s")
 }],
 "loop": true,
-"name": &"penguin",
+"name": &"penguinIdle",
 "speed": 5.0
 }, {
 "frames": [{
@@ -2654,11 +2666,14 @@ collision_mask = 65535
 script = ExtResource("1_5vujo")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Character" unique_id=1828263339]
-position = Vector2(7.033627, -4.836116)
+position = Vector2(7.034, -4.836)
 scale = Vector2(0.69932854, 0.72327757)
 sprite_frames = SubResource("SpriteFrames_wrm1d")
-animation = &"penguin"
-frame_progress = 0.9764905
+animation = &"guinJump"
+
+[node name="Timer" type="Timer" parent="Character/AnimatedSprite2D" unique_id=826577382]
+wait_time = 0.15
+autostart = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Character" unique_id=534402684]
 shape = SubResource("CapsuleShape2D_3dryh")
@@ -2757,7 +2772,7 @@ texture = ExtResource("30_ese38")
 
 [node name="Background" type="Sprite2D" parent="Map" unique_id=193713963]
 z_index = -1
-position = Vector2(-84, -508)
+position = Vector2(-107.00001, -499)
 scale = Vector2(3.2446668, 1)
 texture = ExtResource("42_bu0y5")
 
@@ -2960,6 +2975,7 @@ texture = ExtResource("48_titue")
 [node name="Area2D" type="Area2D" parent="Node" unique_id=1106632020]
 
 [connection signal="animation_finished" from="Character/AnimatedSprite2D" to="Character" method="_on_animated_sprite_2d_animation_finished"]
+[connection signal="timeout" from="Character/AnimatedSprite2D/Timer" to="Character" method="_on_timer_timeout"]
 [connection signal="timeout" from="Character/Camera2D/UI/Label/Timer" to="Character/Camera2D/UI/Label/Timer" method="_on_timer_timeout"]
 [connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]
 [connection signal="body_entered" from="Area2D2" to="Area2D2" method="_on_body_entered"]

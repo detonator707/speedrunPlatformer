@@ -1,4 +1,4 @@
-[gd_scene format=3 uid="uid://b1m6h4ivjlqb0"]
+[gd_scene format=3 uid="uid://besqr3l2uiijp"]
 
 [ext_resource type="Script" uid="uid://cpq32jwpxpup0" path="res://scripts/game/players/zeke.gd" id="1_0nyue"]
 [ext_resource type="Texture2D" uid="uid://y2epe8bjuuy2" path="res://sprites/characters/Pibble/sprite_idle1.png" id="1_j85tk"]

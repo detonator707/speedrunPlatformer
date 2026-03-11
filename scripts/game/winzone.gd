@@ -17,6 +17,7 @@ func _process(delta: float) -> void:
 func _on_body_entered(body: Node2D) -> void:
 	if body == %Character:
 		timer.paused = true
+		timer.check_for_new_record()
 		get_tree().paused = true
 		panel.visible = true
 		box.visible = true

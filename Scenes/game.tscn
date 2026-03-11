@@ -2759,6 +2759,14 @@ layout_mode = 2
 custom_minimum_size = Vector2(280, 0)
 layout_mode = 2
 
+[node name="Highscore" type="Label" parent="Character/Camera2D/UI" unique_id=742534311]
+offset_left = 1018.0
+offset_top = 61.0
+offset_right = 1128.0
+offset_bottom = 127.0
+theme_override_colors/font_color = Color(0.85880685, 4.7168137e-06, 1.1551381e-06, 1)
+theme_override_font_sizes/font_size = 36
+
 [node name="Map" type="Node" parent="." unique_id=1717265281]
 
 [node name="TileMap" type="TileMap" parent="Map" unique_id=1747482695]
@@ -2772,7 +2780,7 @@ texture = ExtResource("30_ese38")
 
 [node name="Background" type="Sprite2D" parent="Map" unique_id=193713963]
 z_index = -1
-position = Vector2(-107.00001, -499)
+position = Vector2(-111.00001, -500)
 scale = Vector2(3.2446668, 1)
 texture = ExtResource("42_bu0y5")
 

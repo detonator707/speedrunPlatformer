@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://t0nmogbob6c4"]
 
 [ext_resource type="Script" uid="uid://b54siabsrqvtb" path="res://scripts/menu.gd" id="1_1rerr"]
-[ext_resource type="Texture2D" uid="uid://dkd64jhu3voiy" path="res://sprites/potentialBackGround.png" id="2_xhh6f"]
+[ext_resource type="Texture2D" uid="uid://duwb0gr0q1ecj" path="res://sprites/kban.png" id="2_xhh6f"]
 
 [node name="Menu" type="Node2D" unique_id=1925733220]
 position = Vector2(-2, 538)
@@ -9,8 +9,8 @@ script = ExtResource("1_1rerr")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1674487176]
 z_index = -1
-position = Vector2(574.50006, -209.50002)
-scale = Vector2(0.9270833, 0.7872596)
+position = Vector2(577.375, -213.14426)
+scale = Vector2(0.7482096, 0.6330942)
 texture = ExtResource("2_xhh6f")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1726981526]
